@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="一闪" xml:space="preserve">
+    <value>Flash</value>
+    <comment>Chinese: 一闪</comment>
+  </data>
+  <data name="万众瞩目" xml:space="preserve">
+    <value>All Eyes on You</value>
+    <comment>Chinese: 万众瞩目</comment>
+  </data>
+  <data name="万众瞩目激涌五重奏弹奏翻倍" xml:space="preserve">
+    <value>All Eyes on You Surging Quintet Double Play</value>
+    <comment>Chinese: 万众瞩目激涌五重奏弹奏翻倍</comment>
+  </data>
+  <data name="万众瞩目热情挥洒3阶段" xml:space="preserve">
+    <value>All Eyes on You Passionate Performance Stage 3</value>
+    <comment>Chinese: 万众瞩目热情挥洒3阶段</comment>
+  </data>
+  <data name="不动如山" xml:space="preserve">
+    <value>Immovable as Mountain</value>
+    <comment>Chinese: 不动如山</comment>
+  </data>
+  <data name="不羁之种" xml:space="preserve">
+    <value>Untamed Seed</value>
+    <comment>Chinese: 不羁之种</comment>
+  </data>
+  <data name="二连矢" xml:space="preserve">
+    <value>Double Arrow</value>
+    <comment>Chinese: 二连矢</comment>
+  </data>
+  <data name="休止的治愈" xml:space="preserve">
+    <value>Rest Healing</value>
+    <comment>Chinese: 休止的治愈</comment>
+  </data>
+  <data name="先锋打击_先锋追击" xml:space="preserve">
+    <value>Vanguard Strike/Vanguard Chase</value>
+    <comment>Chinese: 先锋打击/先锋追击</comment>
+  </data>
+  <data name="光意_四连矢" xml:space="preserve">
+    <value>Light Intent: Quad Arrow</value>
+    <comment>Chinese: 光意·四连矢</comment>
+  </data>
+  <data name="光意_四连矢_溅射伤害_" xml:space="preserve">
+    <value>Light Intent: Quad Arrow (Splash Damage)</value>
+    <comment>Chinese: 光意·四连矢（溅射伤害）</comment>
+  </data>
+  <data name="光明冲击" xml:space="preserve">
+    <value>Light Impact</value>
+    <comment>Chinese: 光明冲击</comment>
+  </data>
+  <data name="光明决心" xml:space="preserve">
+    <value>Light Resolve</value>
+    <comment>Chinese: 光明决心</comment>
+  </data>
+  <data name="光明核心" xml:space="preserve">
+    <value>Light Core</value>
+    <comment>Chinese: 光明核心</comment>
+  </data>
+  <data name="光棱" xml:space="preserve">
+    <value>Light Prism</value>
+    <comment>Chinese: 光棱</comment>
+  </data>
+  <data name="光棱溅射" xml:space="preserve">
+    <value>Light Prism Splash</value>
+    <comment>Chinese: 光棱溅射</comment>
+  </data>
+  <data name="光能凝滞定身BUFF" xml:space="preserve">
+    <value>Light Energy Stasis Immobilization Buff</value>
+    <comment>Chinese: 光能凝滞定身BUFF</comment>
+  </data>
+  <data name="光能裂隙" xml:space="preserve">
+    <value>Light Energy Rift</value>
+    <comment>Chinese: 光能裂隙</comment>
+  </data>
+  <data name="光能轰炸" xml:space="preserve">
+    <value>Light Energy Bombardment</value>
+    <comment>Chinese: 光能轰炸</comment>
+  </data>
+  <data name="光能轰炸伤害区域BUFF" xml:space="preserve">
+    <value>Light Energy Bombardment Damage Area Buff</value>
+    <comment>Chinese: 光能轰炸伤害区域BUFF</comment>
+  </data>
+  <data name="光追箭" xml:space="preserve">
+    <value>Light Homing Arrow</value>
+    <comment>Chinese: 光追箭</comment>
+  </data>
+  <data name="公正之剑" xml:space="preserve">
+    <value>Sword of Justice</value>
+    <comment>Chinese: 公正之剑</comment>
+  </data>
+  <data name="共生印记" xml:space="preserve">
+    <value>Symbiotic Mark</value>
+    <comment>Chinese: 共生印记</comment>
+  </data>
+  <data name="内爆_钢制喙触发_" xml:space="preserve">
+    <value>Implosion (Steel Beak Trigger)</value>
+    <comment>Chinese: 内爆(钢制喙触发)</comment>
+  </data>
+  <data name="再生脉冲" xml:space="preserve">
+    <value>Regeneration Pulse</value>
+    <comment>Chinese: 再生脉冲</comment>
+  </data>
+  <data name="再生脉冲_包含伤害和治疗_" xml:space="preserve">
+    <value>Regeneration Pulse (Damage and Healing)</value>
+    <comment>Chinese: 再生脉冲(包含伤害和治疗)</comment>
+  </data>
+  <data name="再生脉冲_扩散治疗" xml:space="preserve">
+    <value>Regeneration Pulse - Spread Healing</value>
+    <comment>Chinese: 再生脉冲-扩散治疗</comment>
+  </data>
+  <data name="冰之灌注" xml:space="preserve">
+    <value>Ice Infusion</value>
+    <comment>Chinese: 冰之灌注</comment>
+  </data>
+  <data name="冰冷脉冲" xml:space="preserve">
+    <value>Cold Pulse</value>
+    <comment>Chinese: 冰冷脉冲</comment>
+  </data>
+  <data name="冰矛" xml:space="preserve">
+    <value>Ice Spear</value>
+    <comment>Chinese: 冰矛</comment>
+  </data>
+  <data name="冰箭" xml:space="preserve">
+    <value>Ice Arrow</value>
+    <comment>Chinese: 冰箭</comment>
+  </data>
+  <data name="冰箭爆炸" xml:space="preserve">
+    <value>Ice Arrow Explosion</value>
+    <comment>Chinese: 冰箭爆炸</comment>
+  </data>
+  <data name="冰箱BUFF" xml:space="preserve">
+    <value>Ice Box Buff</value>
+    <comment>Chinese: 冰箱BUFF</comment>
+  </data>
+  <data name="冰霜之矛" xml:space="preserve">
+    <value>Frost Spear</value>
+    <comment>Chinese: 冰霜之矛</comment>
+  </data>
+  <data name="冰霜冲击" xml:space="preserve">
+    <value>Frost Impact</value>
+    <comment>Chinese: 冰霜冲击</comment>
+  </data>
+  <data name="冰霜彗星" xml:space="preserve">
+    <value>Frost Comet</value>
+    <comment>Chinese: 冰霜彗星</comment>
+  </data>
+  <data name="冰龙卷" xml:space="preserve">
+    <value>Ice Tornado</value>
+    <comment>Chinese: 冰龙卷</comment>
+  </data>
+  <data name="冷冷酷征伐伤害buff" xml:space="preserve">
+    <value>Cold Ruthless Conquest Damage Buff</value>
+    <comment>Chinese: 冷冷酷征伐伤害buff</comment>
+  </data>
+  <data name="冷酷征伐" xml:space="preserve">
+    <value>Ruthless Conquest</value>
+    <comment>Chinese: 冷酷征伐</comment>
+  </data>
+  <data name="冷酷征伐伤害buff" xml:space="preserve">
+    <value>Ruthless Conquest Damage Buff</value>
+    <comment>Chinese: 冷酷征伐伤害buff</comment>
+  </data>
+  <data name="冻结寒风" xml:space="preserve">
+    <value>Freezing Cold Wind</value>
+    <comment>Chinese: 冻结寒风</comment>
+  </data>
+  <data name="凛威_圣光灌注" xml:space="preserve">
+    <value>Divine Might: Holy Light Infusion</value>
+    <comment>Chinese: 凛威·圣光灌注</comment>
+  </data>
+  <data name="刹那" xml:space="preserve">
+    <value>Instant</value>
+    <comment>Chinese: 刹那</comment>
+  </data>
+  <data name="剑盾哥布林_风刃斩共鸣" xml:space="preserve">
+    <value>Sword Shield Goblin - Wind Blade Resonance</value>
+    <comment>Chinese: 剑盾哥布林-风刃斩共鸣</comment>
+  </data>
+  <data name="剧毒蜂巢_初始_" xml:space="preserve">
+    <value>Toxic Hive (Initial)</value>
+    <comment>Chinese: 剧毒蜂巢（初始）</comment>
+  </data>
+  <data name="剧毒蜂巢_持续_" xml:space="preserve">
+    <value>Toxic Hive (Duration)</value>
+    <comment>Chinese: 剧毒蜂巢（持续）</comment>
+  </data>
+  <data name="勇气风环" xml:space="preserve">
+    <value>Courage Wind Ring</value>
+    <comment>Chinese: 勇气风环</comment>
+  </data>
+  <data name="勇气风环吸血" xml:space="preserve">
+    <value>Courage Wind Ring Lifesteal</value>
+    <comment>Chinese: 勇气风环吸血</comment>
+  </data>
+  <data name="勇者壁垒" xml:space="preserve">
+    <value>Hero's Bastion</value>
+    <comment>Chinese: 勇者壁垒</comment>
+  </data>
+  <data name="千雷闪影之意" xml:space="preserve">
+    <value>Thousand Thunder Flash Shadow Intent</value>
+    <comment>Chinese: 千雷闪影之意</comment>
+  </data>
+  <data name="升格_劲爆全场" xml:space="preserve">
+    <value>Upgrade: Explosive Performance</value>
+    <comment>Chinese: 升格·劲爆全场</comment>
+  </data>
+  <data name="升格_劲爆全场copy" xml:space="preserve">
+    <value>Upgrade: Explosive Performance Copy</value>
+    <comment>Chinese: 升格·劲爆全场copy</comment>
+  </data>
+  <data name="升格_无限狂想" xml:space="preserve">
+    <value>Upgrade: Infinite Fantasy</value>
+    <comment>Chinese: 升格·无限狂想</comment>
+  </data>
+  <data name="升格_无限狂想copy" xml:space="preserve">
+    <value>Upgrade: Infinite Fantasy Copy</value>
+    <comment>Chinese: 升格·无限狂想copy</comment>
+  </data>
+  <data name="协同冰晶" xml:space="preserve">
+    <value>Cooperative Ice Crystal</value>
+    <comment>Chinese: 协同冰晶</comment>
+  </data>
+  <data name="变异峰_被动_" xml:space="preserve">
+    <value>Mutant Bee (Passive)</value>
+    <comment>Chinese: 变异峰（被动）</comment>
+  </data>
+  <data name="变异蜂主动a1" xml:space="preserve">
+    <value>Mutant Bee Active A1</value>
+    <comment>Chinese: 变异蜂主动a1</comment>
+  </data>
+  <data name="变异蜂技能12" xml:space="preserve">
+    <value>Mutant Bee Skill 12</value>
+    <comment>Chinese: 变异蜂技能12</comment>
+  </data>
+  <data name="变异蜂技能3" xml:space="preserve">
+    <value>Mutant Bee Skill 3</value>
+    <comment>Chinese: 变异蜂技能3</comment>
+  </data>
+  <data name="变异蜂被动" xml:space="preserve">
+    <value>Mutant Bee Passive</value>
+    <comment>Chinese: 变异蜂被动</comment>
+  </data>
+  <data name="后撤斩" xml:space="preserve">
+    <value>Retreat Slash</value>
+    <comment>Chinese: 后撤斩</comment>
+  </data>
+  <data name="哥布林弩手主动" xml:space="preserve">
+    <value>Goblin Crossbow Active</value>
+    <comment>Chinese: 哥布林弩手主动</comment>
+  </data>
+  <data name="哥布林弩手_被动_" xml:space="preserve">
+    <value>Goblin Crossbow (Passive)</value>
+    <comment>Chinese: 哥布林弩手（被动）</comment>
+  </data>
+  <data name="回复_岩盾_" xml:space="preserve">
+    <value>Recovery (Rock Shield)</value>
+    <comment>Chinese: 回复（岩盾）</comment>
+  </data>
+  <data name="圣光守卫" xml:space="preserve">
+    <value>Holy Light Guard</value>
+    <comment>Chinese: 圣光守卫</comment>
+  </data>
+  <data name="圣剑" xml:space="preserve">
+    <value>Holy Sword</value>
+    <comment>Chinese: 圣剑</comment>
+  </data>
+  <data name="圣环" xml:space="preserve">
+    <value>Sacred Ring</value>
+    <comment>Chinese: 圣环</comment>
+  </data>
+  <data name="圣环伤害_治疗_相同编号_" xml:space="preserve">
+    <value>Sacred Ring Damage/Healing (Same ID)</value>
+    <comment>Chinese: 圣环伤害/治疗(相同编号)</comment>
+  </data>
+  <data name="坍缩！boom~" xml:space="preserve">
+    <value>Collapse! Boom~</value>
+    <comment>Chinese: 坍缩！boom~</comment>
+  </data>
+  <data name="坚毅之息" xml:space="preserve">
+    <value>Breath of Fortitude</value>
+    <comment>Chinese: 坚毅之息</comment>
+  </data>
+  <data name="坠龙闪" xml:space="preserve">
+    <value>Falling Dragon Flash</value>
+    <comment>Chinese: 坠龙闪</comment>
+  </data>
+  <data name="增幅节拍" xml:space="preserve">
+    <value>Amplified Beat</value>
+    <comment>Chinese: 增幅节拍</comment>
+  </data>
+  <data name="复苏光环回血BUFF" xml:space="preserve">
+    <value>Revival Aura Health Regen Buff</value>
+    <comment>Chinese: 复苏光环回血BUFF</comment>
+  </data>
+  <data name="天界雄鹰" xml:space="preserve">
+    <value>Celestial Eagle</value>
+    <comment>Chinese: 天界雄鹰</comment>
+  </data>
+  <data name="天翔贯星击_强化怒涛射击" xml:space="preserve">
+    <value>Sky-Piercing Star Strike - Enhanced Raging Wave Shot</value>
+    <comment>Chinese: 天翔贯星击-强化怒涛射击</comment>
+  </data>
+  <data name="天赋_光能裂痕" xml:space="preserve">
+    <value>Talent - Light Energy Crack</value>
+    <comment>Chinese: 天赋-光能裂痕</comment>
+  </data>
+  <data name="天赋_冰晶落" xml:space="preserve">
+    <value>Talent - Ice Crystal Fall</value>
+    <comment>Chinese: 天赋-冰晶落</comment>
+  </data>
+  <data name="天赋触发彗星" xml:space="preserve">
+    <value>Talent Triggered Comet</value>
+    <comment>Chinese: 天赋触发彗星</comment>
+  </data>
+  <data name="天降圣光生效BUFF" xml:space="preserve">
+    <value>Descending Holy Light Effect Buff</value>
+    <comment>Chinese: 天降圣光生效BUFF</comment>
+  </data>
+  <data name="夺命射击_四连矢" xml:space="preserve">
+    <value>夺命射击-四连矢</value>
+    <comment>Chinese: 夺命射击-四连矢</comment>
+  </data>
+  <data name="奥义__沧澜风啸_飞鱼_" xml:space="preserve">
+    <value>Secret Art! Ocean Wind Howl (Flying Fish)</value>
+    <comment>Chinese: 奥义! 沧澜风啸(飞鱼)</comment>
+  </data>
+  <data name="奥义__茧房术_蜘蛛_" xml:space="preserve">
+    <value>Secret Art! Cocoon Art (Spider)</value>
+    <comment>Chinese: 奥义! 茧房术(蜘蛛)</comment>
+  </data>
+  <data name="奥义！冰霜震荡_冰魔_" xml:space="preserve">
+    <value>Secret Art! Frost Shock (Ice Demon)</value>
+    <comment>Chinese: 奥义！冰霜震荡(冰魔)</comment>
+  </data>
+  <data name="奥义！地狱突刺_铁牙_" xml:space="preserve">
+    <value>Secret Art! Hell Thrust (Iron Fang)</value>
+    <comment>Chinese: 奥义！地狱突刺(铁牙)</comment>
+  </data>
+  <data name="奥义！流星陨落_风哥__主动_" xml:space="preserve">
+    <value>Secret Art! Meteor Fall (Wind Goblin) (Active)</value>
+    <comment>Chinese: 奥义！流星陨落(风哥)(主动)</comment>
+  </data>
+  <data name="奥义！琉火咆哮_火魔_" xml:space="preserve">
+    <value>Secret Art! Glazed Fire Roar (Fire Demon)</value>
+    <comment>Chinese: 奥义！琉火咆哮(火魔)</comment>
+  </data>
+  <data name="奥义！瞬即斩_奥尔维拉_" xml:space="preserve">
+    <value>Secret Art! Instant Slash (Oliveira)</value>
+    <comment>Chinese: 奥义！瞬即斩(奥尔维拉)</comment>
+  </data>
+  <data name="奥义！脉冲祝祷_姆克王_" xml:space="preserve">
+    <value>Secret Art! Pulse Prayer (Muk King)</value>
+    <comment>Chinese: 奥义！脉冲祝祷（姆克王）</comment>
+  </data>
+  <data name="奥义！重锤狂袭_姆头_" xml:space="preserve">
+    <value>Secret Art! Heavy Hammer Rampage (Muk Boss)</value>
+    <comment>Chinese: 奥义！重锤狂袭（姆头）</comment>
+  </data>
+  <data name="奥义！雷霆咆哮_金牙__雷击_" xml:space="preserve">
+    <value>Secret Art! Thunder Roar (Golden Fang) (Lightning)</value>
+    <comment>Chinese: 奥义！雷霆咆哮(金牙)(雷击)</comment>
+  </data>
+  <data name="奥义！雷霆天牢引_雷魔_" xml:space="preserve">
+    <value>Secret Art! Thunder Heaven Prison (Thunder Demon)</value>
+    <comment>Chinese: 奥义！雷霆天牢引（雷魔）</comment>
+  </data>
+  <data name="奥义！静默潮汐_蜥蜴人王_" xml:space="preserve">
+    <value>Secret Art! Silent Tide (Lizardman King)</value>
+    <comment>Chinese: 奥义！静默潮汐(蜥蜴人王)</comment>
+  </data>
+  <data name="姆克兵长被动" xml:space="preserve">
+    <value>Muk Sergeant Passive</value>
+    <comment>Chinese: 姆克兵长被动</comment>
+  </data>
+  <data name="姆克狂战士_旋风冲锋" xml:space="preserve">
+    <value>Muk Berserker - Whirlwind Charge</value>
+    <comment>Chinese: 姆克狂战士-旋风冲锋</comment>
+  </data>
+  <data name="姆克王_护盾" xml:space="preserve">
+    <value>Muk King - Shield</value>
+    <comment>Chinese: 姆克王-护盾</comment>
+  </data>
+  <data name="威慑射击" xml:space="preserve">
+    <value>Intimidating Shot</value>
+    <comment>Chinese: 威慑射击</comment>
+  </data>
+  <data name="安可" xml:space="preserve">
+    <value>Encore</value>
+    <comment>Chinese: 安可</comment>
+  </data>
+  <data name="安可伤害" xml:space="preserve">
+    <value>Encore Damage</value>
+    <comment>Chinese: 安可伤害</comment>
+  </data>
+  <data name="安可曲转化" xml:space="preserve">
+    <value>Encore Song Transformation</value>
+    <comment>Chinese: 安可曲转化</comment>
+  </data>
+  <data name="安可治疗" xml:space="preserve">
+    <value>Encore Healing</value>
+    <comment>Chinese: 安可治疗</comment>
+  </data>
+  <data name="完结！愈合乐章" xml:space="preserve">
+    <value>Finale! Healing Movement</value>
+    <comment>Chinese: 完结！愈合乐章</comment>
+  </data>
+  <data name="宠物雄鹰快速回旋" xml:space="preserve">
+    <value>Pet Eagle Rapid Spin</value>
+    <comment>Chinese: 宠物雄鹰快速回旋</comment>
+  </data>
+  <data name="寒冰庇护" xml:space="preserve">
+    <value>Ice Shelter</value>
+    <comment>Chinese: 寒冰庇护</comment>
+  </data>
+  <data name="寒冰风暴" xml:space="preserve">
+    <value>Ice Storm</value>
+    <comment>Chinese: 寒冰风暴</comment>
+  </data>
+  <data name="射线" xml:space="preserve">
+    <value>Ray</value>
+    <comment>Chinese: 射线</comment>
+  </data>
+  <data name="居合" xml:space="preserve">
+    <value>Iaido</value>
+    <comment>Chinese: 居合</comment>
+  </data>
+  <data name="山贼被动" xml:space="preserve">
+    <value>Bandit Passive</value>
+    <comment>Chinese: 山贼被动</comment>
+  </data>
+  <data name="岩之力" xml:space="preserve">
+    <value>Power of Rock</value>
+    <comment>Chinese: 岩之力</comment>
+  </data>
+  <data name="岩之守护" xml:space="preserve">
+    <value>Rock Guardian</value>
+    <comment>Chinese: 岩之守护</comment>
+  </data>
+  <data name="岩御_崩裂回环" xml:space="preserve">
+    <value>Rock Defense: Collapse Cycle</value>
+    <comment>Chinese: 岩御·崩裂回环</comment>
+  </data>
+  <data name="岩怒之击" xml:space="preserve">
+    <value>Rock Fury Strike</value>
+    <comment>Chinese: 岩怒之击</comment>
+  </data>
+  <data name="岩护" xml:space="preserve">
+    <value>Rock Protection</value>
+    <comment>Chinese: 岩护</comment>
+  </data>
+  <data name="岩盾" xml:space="preserve">
+    <value>Rock Shield</value>
+    <comment>Chinese: 岩盾</comment>
+  </data>
+  <data name="崩裂" xml:space="preserve">
+    <value>Collapse</value>
+    <comment>Chinese: 崩裂</comment>
+  </data>
+  <data name="巡演曲伤害" xml:space="preserve">
+    <value>Tour Song Damage</value>
+    <comment>Chinese: 巡演曲伤害</comment>
+  </data>
+  <data name="巡演曲治疗" xml:space="preserve">
+    <value>Tour Song Healing</value>
+    <comment>Chinese: 巡演曲治疗</comment>
+  </data>
+  <data name="巨岩撞击" xml:space="preserve">
+    <value>Giant Rock Impact</value>
+    <comment>Chinese: 巨岩撞击</comment>
+  </data>
+  <data name="巨岩躯体" xml:space="preserve">
+    <value>Giant Rock Body</value>
+    <comment>Chinese: 巨岩躯体</comment>
+  </data>
+  <data name="巨岩轰击" xml:space="preserve">
+    <value>Giant Rock Bombardment</value>
+    <comment>Chinese: 巨岩轰击</comment>
+  </data>
+  <data name="希望结界伤害" xml:space="preserve">
+    <value>Hope Barrier Damage</value>
+    <comment>Chinese: 希望结界伤害</comment>
+  </data>
+  <data name="希望结界持续_包含伤害和治疗_" xml:space="preserve">
+    <value>Hope Barrier Duration (Damage and Healing)</value>
+    <comment>Chinese: 希望结界持续(包含伤害和治疗)</comment>
+  </data>
+  <data name="幸运一击_仪刀_" xml:space="preserve">
+    <value>Lucky Strike (Ceremonial Sword)</value>
+    <comment>Chinese: 幸运一击(仪刀)</comment>
+  </data>
+  <data name="幸运一击_冰法_" xml:space="preserve">
+    <value>Lucky Strike (Ice Mage)</value>
+    <comment>Chinese: 幸运一击(冰法)</comment>
+  </data>
+  <data name="幸运一击_剑盾_" xml:space="preserve">
+    <value>Lucky Strike (Sword &amp; Shield)</value>
+    <comment>Chinese: 幸运一击(剑盾)</comment>
+  </data>
+  <data name="幸运一击_太刀_" xml:space="preserve">
+    <value>Lucky Strike (Tachi)</value>
+    <comment>Chinese: 幸运一击(太刀)</comment>
+  </data>
+  <data name="幸运一击_巨刃_" xml:space="preserve">
+    <value>Lucky Strike (Giant Blade)</value>
+    <comment>Chinese: 幸运一击(巨刃)</comment>
+  </data>
+  <data name="幸运一击_弓箭手_" xml:space="preserve">
+    <value>Lucky Strike (Archer)</value>
+    <comment>Chinese: 幸运一击(弓箭手)</comment>
+  </data>
+  <data name="幸运一击_惩戒_" xml:space="preserve">
+    <value>Lucky Strike (Retribution)</value>
+    <comment>Chinese: 幸运一击(惩戒)</comment>
+  </data>
+  <data name="幸运一击_手炮_" xml:space="preserve">
+    <value>Lucky Strike (Hand Cannon)</value>
+    <comment>Chinese: 幸运一击(手炮)</comment>
+  </data>
+  <data name="幸运一击_森语者_" xml:space="preserve">
+    <value>Lucky Strike (Forest Speaker)</value>
+    <comment>Chinese: 幸运一击(森语者)</comment>
+  </data>
+  <data name="幸运一击_灵魂乐手_" xml:space="preserve">
+    <value>Lucky Strike (Soul Musician)</value>
+    <comment>Chinese: 幸运一击(灵魂乐手)</comment>
+  </data>
+  <data name="幸运一击_长枪_" xml:space="preserve">
+    <value>Lucky Strike (Lance)</value>
+    <comment>Chinese: 幸运一击(长枪)</comment>
+  </data>
+  <data name="幻影冲刺" xml:space="preserve">
+    <value>Phantom Dash</value>
+    <comment>Chinese: 幻影冲刺</comment>
+  </data>
+  <data name="幻影冲锋" xml:space="preserve">
+    <value>Phantom Charge</value>
+    <comment>Chinese: 幻影冲锋</comment>
+  </data>
+  <data name="幻影猎鹰" xml:space="preserve">
+    <value>Phantom Falcon</value>
+    <comment>Chinese: 幻影猎鹰</comment>
+  </data>
+  <data name="幻影雄鹰" xml:space="preserve">
+    <value>Phantom Eagle</value>
+    <comment>Chinese: 幻影雄鹰</comment>
+  </data>
+  <data name="弓_大招引力" xml:space="preserve">
+    <value>Bow - Ultimate Attraction</value>
+    <comment>Chinese: 弓-大招引力</comment>
+  </data>
+  <data name="弱点打击" xml:space="preserve">
+    <value>Weak Point Strike</value>
+    <comment>Chinese: 弱点打击</comment>
+  </data>
+  <data name="弹无虚发" xml:space="preserve">
+    <value>Every Shot Counts</value>
+    <comment>Chinese: 弹无虚发</comment>
+  </data>
+  <data name="弹无虚发_红光反制" xml:space="preserve">
+    <value>Every Shot Counts - Red Light Counter</value>
+    <comment>Chinese: 弹无虚发-红光反制</comment>
+  </data>
+  <data name="强化断罪" xml:space="preserve">
+    <value>Enhanced Judgment</value>
+    <comment>Chinese: 强化断罪</comment>
+  </data>
+  <data name="强化清淹绕珠" xml:space="preserve">
+    <value>Enhanced Clear Flood Encircling Pearl</value>
+    <comment>Chinese: 强化清淹绕珠</comment>
+  </data>
+  <data name="强化热情挥洒" xml:space="preserve">
+    <value>Enhanced Passionate Performance</value>
+    <comment>Chinese: 强化热情挥洒</comment>
+  </data>
+  <data name="强化特攻最后一击虚拟体" xml:space="preserve">
+    <value>Enhanced Special Attack Final Strike Virtual Body</value>
+    <comment>Chinese: 强化特攻最后一击虚拟体</comment>
+  </data>
+  <data name="心眼" xml:space="preserve">
+    <value>Mind's Eye</value>
+    <comment>Chinese: 心眼</comment>
+  </data>
+  <data name="怒涛射击" xml:space="preserve">
+    <value>Raging Wave Shot</value>
+    <comment>Chinese: 怒涛射击</comment>
+  </data>
+  <data name="怒爆" xml:space="preserve">
+    <value>Rage Explosion</value>
+    <comment>Chinese: 怒爆</comment>
+  </data>
+  <data name="惩击奶空A1段" xml:space="preserve">
+    <value>Retribution Heal Combo A1</value>
+    <comment>Chinese: 惩击奶空A1段</comment>
+  </data>
+  <data name="惩击奶空A2段" xml:space="preserve">
+    <value>Retribution Heal Combo A2</value>
+    <comment>Chinese: 惩击奶空A2段</comment>
+  </data>
+  <data name="惩击奶空A3段" xml:space="preserve">
+    <value>Retribution Heal Combo A3</value>
+    <comment>Chinese: 惩击奶空A3段</comment>
+  </data>
+  <data name="惩击奶空A4段" xml:space="preserve">
+    <value>Retribution Heal Combo A4</value>
+    <comment>Chinese: 惩击奶空A4段</comment>
+  </data>
+  <data name="愈合乐章治疗" xml:space="preserve">
+    <value>Healing Movement Healing</value>
+    <comment>Chinese: 愈合乐章治疗</comment>
+  </data>
+  <data name="愈合节拍" xml:space="preserve">
+    <value>Healing Beat</value>
+    <comment>Chinese: 愈合节拍</comment>
+  </data>
+  <data name="愈合节拍copy" xml:space="preserve">
+    <value>Healing Beat Copy</value>
+    <comment>Chinese: 愈合节拍copy</comment>
+  </data>
+  <data name="慕课头目" xml:space="preserve">
+    <value>MOOC Boss</value>
+    <comment>Chinese: 慕课头目</comment>
+  </data>
+  <data name="我流刀法_诛恶" xml:space="preserve">
+    <value>My Style Blade Art: Evil Slaying</value>
+    <comment>Chinese: 我流刀法·诛恶</comment>
+  </data>
+  <data name="我流秘刀法" xml:space="preserve">
+    <value>My Style Secret Blade Art</value>
+    <comment>Chinese: 我流秘刀法</comment>
+  </data>
+  <data name="我流秘刀法2" xml:space="preserve">
+    <value>My Style Secret Blade Art 2</value>
+    <comment>Chinese: 我流秘刀法2</comment>
+  </data>
+  <data name="我流秘刀法_壹之型_改" xml:space="preserve">
+    <value>My Style Secret Blade Art: Form One Modified</value>
+    <comment>Chinese: 我流秘刀法·壹之型·改</comment>
+  </data>
+  <data name="我流秘刀法_贰之型_改" xml:space="preserve">
+    <value>My Style Secret Blade Art: Form Two Modified</value>
+    <comment>Chinese: 我流秘刀法·贰之型·改</comment>
+  </data>
+  <data name="扑咬" xml:space="preserve">
+    <value>Pounce Bite</value>
+    <comment>Chinese: 扑咬</comment>
+  </data>
+  <data name="投掷盾牌" xml:space="preserve">
+    <value>Shield Throw</value>
+    <comment>Chinese: 投掷盾牌</comment>
+  </data>
+  <data name="护盾回声" xml:space="preserve">
+    <value>Shield Echo</value>
+    <comment>Chinese: 护盾回声</comment>
+  </data>
+  <data name="护盾猛击" xml:space="preserve">
+    <value>Shield Slam</value>
+    <comment>Chinese: 护盾猛击</comment>
+  </data>
+  <data name="掌控藤曼" xml:space="preserve">
+    <value>Vine Control</value>
+    <comment>Chinese: 掌控藤曼</comment>
+  </data>
+  <data name="掌控藤蔓_红光反制" xml:space="preserve">
+    <value>Vine Control - Red Light Counter</value>
+    <comment>Chinese: 掌控藤蔓-红光反制</comment>
+  </data>
+  <data name="撕裂" xml:space="preserve">
+    <value>Tear</value>
+    <comment>Chinese: 撕裂</comment>
+  </data>
+  <data name="斩龙式" xml:space="preserve">
+    <value>Dragon Slaying Style</value>
+    <comment>Chinese: 斩龙式</comment>
+  </data>
+  <data name="断罪" xml:space="preserve">
+    <value>Judgment</value>
+    <comment>Chinese: 断罪</comment>
+  </data>
+  <data name="无穷雷霆之力" xml:space="preserve">
+    <value>Infinite Thunder Power</value>
+    <comment>Chinese: 无穷雷霆之力</comment>
+  </data>
+  <data name="无限狂想伤害" xml:space="preserve">
+    <value>Infinite Fantasy Damage</value>
+    <comment>Chinese: 无限狂想伤害</comment>
+  </data>
+  <data name="无限狂想治疗" xml:space="preserve">
+    <value>Infinite Fantasy Healing</value>
+    <comment>Chinese: 无限狂想治疗</comment>
+  </data>
+  <data name="无限连奏安可伤害" xml:space="preserve">
+    <value>Infinite Performance Encore Damage</value>
+    <comment>Chinese: 无限连奏安可伤害</comment>
+  </data>
+  <data name="暴风箭矢" xml:space="preserve">
+    <value>Storm Arrow</value>
+    <comment>Chinese: 暴风箭矢</comment>
+  </data>
+  <data name="暴风箭矢SP" xml:space="preserve">
+    <value>Storm Arrow SP</value>
+    <comment>Chinese: 暴风箭矢SP</comment>
+  </data>
+  <data name="月刃" xml:space="preserve">
+    <value>Moon Blade</value>
+    <comment>Chinese: 月刃</comment>
+  </data>
+  <data name="月刃回旋" xml:space="preserve">
+    <value>Moon Blade Whirl</value>
+    <comment>Chinese: 月刃回旋</comment>
+  </data>
+  <data name="月影" xml:space="preserve">
+    <value>Moon Shadow</value>
+    <comment>Chinese: 月影</comment>
+  </data>
+  <data name="极_岚切" xml:space="preserve">
+    <value>Ultimate Storm Cut</value>
+    <comment>Chinese: 极·岚切</comment>
+  </data>
+  <data name="极寒_冰雪颂歌" xml:space="preserve">
+    <value>Extreme Cold: Ice Snow Hymn</value>
+    <comment>Chinese: 极寒·冰雪颂歌</comment>
+  </data>
+  <data name="极意万众瞩目" xml:space="preserve">
+    <value>Ultimate All Eyes on You</value>
+    <comment>Chinese: 极意万众瞩目</comment>
+  </data>
+  <data name="极诣_大破灭连斩" xml:space="preserve">
+    <value>Ultimate: Great Destruction Chain Slash</value>
+    <comment>Chinese: 极诣·大破灭连斩</comment>
+  </data>
+  <data name="极诣_大破灭连斩_天赋_" xml:space="preserve">
+    <value>Ultimate: Great Destruction Chain Slash (Talent)</value>
+    <comment>Chinese: 极诣·大破灭连斩(天赋)</comment>
+  </data>
+  <data name="格挡冲击" xml:space="preserve">
+    <value>Block Impact</value>
+    <comment>Chinese: 格挡冲击</comment>
+  </data>
+  <data name="格挡冲击_怒击" xml:space="preserve">
+    <value>Block Impact - Fury Strike</value>
+    <comment>Chinese: 格挡冲击-怒击</comment>
+  </data>
+  <data name="格挡减伤" xml:space="preserve">
+    <value>Block Damage Reduction</value>
+    <comment>Chinese: 格挡减伤</comment>
+  </data>
+  <data name="格挡反击" xml:space="preserve">
+    <value>Block Counter</value>
+    <comment>Chinese: 格挡反击</comment>
+  </data>
+  <data name="格挡反击__强" xml:space="preserve">
+    <value>Block Counter - Strong</value>
+    <comment>Chinese: 格挡反击--强</comment>
+  </data>
+  <data name="格挡回复" xml:space="preserve">
+    <value>Block Recovery</value>
+    <comment>Chinese: 格挡回复</comment>
+  </data>
+  <data name="森之祈愿" xml:space="preserve">
+    <value>Forest Prayer</value>
+    <comment>Chinese: 森之祈愿</comment>
+  </data>
+  <data name="止战之锋" xml:space="preserve">
+    <value>War-Ending Edge</value>
+    <comment>Chinese: 止战之锋</comment>
+  </data>
+  <data name="止战之锋_红光反制" xml:space="preserve">
+    <value>War-Ending Edge - Red Light Counter</value>
+    <comment>Chinese: 止战之锋-红光反制</comment>
+  </data>
+  <data name="止战之锋1_岩弹" xml:space="preserve">
+    <value>War-Ending Edge 1/Rock Bullet</value>
+    <comment>Chinese: 止战之锋1/岩弹</comment>
+  </data>
+  <data name="止战之锋2_岩弹" xml:space="preserve">
+    <value>War-Ending Edge 2/Rock Bullet</value>
+    <comment>Chinese: 止战之锋2/岩弹</comment>
+  </data>
+  <data name="止战之锋3" xml:space="preserve">
+    <value>War-Ending Edge 3</value>
+    <comment>Chinese: 止战之锋3</comment>
+  </data>
+  <data name="止战之锋4" xml:space="preserve">
+    <value>War-Ending Edge 4</value>
+    <comment>Chinese: 止战之锋4</comment>
+  </data>
+  <data name="止战之锋_跳跃_" xml:space="preserve">
+    <value>War-Ending Edge (Jump)</value>
+    <comment>Chinese: 止战之锋（跳跃）</comment>
+  </data>
+  <data name="水之涡流" xml:space="preserve">
+    <value>Water Vortex</value>
+    <comment>Chinese: 水之涡流</comment>
+  </data>
+  <data name="水龙卷_被动版" xml:space="preserve">
+    <value>Water Tornado - Passive Version</value>
+    <comment>Chinese: 水龙卷-被动版</comment>
+  </data>
+  <data name="沙晶石震荡" xml:space="preserve">
+    <value>Sand Crystal Resonance</value>
+    <comment>Chinese: 沙晶石震荡</comment>
+  </data>
+  <data name="治疗链接" xml:space="preserve">
+    <value>Healing Link</value>
+    <comment>Chinese: 治疗链接</comment>
+  </data>
+  <data name="活力解放" xml:space="preserve">
+    <value>Vitality Release</value>
+    <comment>Chinese: 活力解放</comment>
+  </data>
+  <data name="浪潮" xml:space="preserve">
+    <value>Wave</value>
+    <comment>Chinese: 浪潮</comment>
+  </data>
+  <data name="浪潮汇聚_水龙卷" xml:space="preserve">
+    <value>Wave Convergence - Water Tornado</value>
+    <comment>Chinese: 浪潮汇聚-水龙卷</comment>
+  </data>
+  <data name="清淹绕珠" xml:space="preserve">
+    <value>Clear Flood Encircling Pearl</value>
+    <comment>Chinese: 清淹绕珠</comment>
+  </data>
+  <data name="清滝绕珠" xml:space="preserve">
+    <value>Clear Waterfall Encircling Pearl</value>
+    <comment>Chinese: 清滝绕珠</comment>
+  </data>
+  <data name="清算" xml:space="preserve">
+    <value>Reckoning</value>
+    <comment>Chinese: 清算</comment>
+  </data>
+  <data name="滋养" xml:space="preserve">
+    <value>Nourish</value>
+    <comment>Chinese: 滋养</comment>
+  </data>
+  <data name="滋养之种" xml:space="preserve">
+    <value>Nourishing Seed</value>
+    <comment>Chinese: 滋养之种</comment>
+  </data>
+  <data name="激昂_热情挥洒" xml:space="preserve">
+    <value>Passionate Performance</value>
+    <comment>Chinese: 激昂·热情挥洒</comment>
+  </data>
+  <data name="激涌五重奏copy" xml:space="preserve">
+    <value>Surging Quintet Copy</value>
+    <comment>Chinese: 激涌五重奏copy</comment>
+  </data>
+  <data name="激涌五重奏伤害" xml:space="preserve">
+    <value>Surging Quintet Damage</value>
+    <comment>Chinese: 激涌五重奏伤害</comment>
+  </data>
+  <data name="激涌五重奏治疗" xml:space="preserve">
+    <value>Surging Quintet Healing</value>
+    <comment>Chinese: 激涌五重奏治疗</comment>
+  </data>
+  <data name="灌注" xml:space="preserve">
+    <value>Infusion</value>
+    <comment>Chinese: 灌注</comment>
+  </data>
+  <data name="火柱冲击" xml:space="preserve">
+    <value>Fire Pillar Impact</value>
+    <comment>Chinese: 火柱冲击</comment>
+  </data>
+  <data name="火柱冲击_炎舞奏者强化" xml:space="preserve">
+    <value>Fire Pillar Impact - Flame Dancer Enhanced</value>
+    <comment>Chinese: 火柱冲击-炎舞奏者强化</comment>
+  </data>
+  <data name="火魔治疗" xml:space="preserve">
+    <value>Fire Demon Healing</value>
+    <comment>Chinese: 火魔治疗</comment>
+  </data>
+  <data name="灼热裁决" xml:space="preserve">
+    <value>Scorching Verdict</value>
+    <comment>Chinese: 灼热裁决</comment>
+  </data>
+  <data name="灼热裁决圣剑" xml:space="preserve">
+    <value>Scorching Verdict Holy Sword</value>
+    <comment>Chinese: 灼热裁决圣剑</comment>
+  </data>
+  <data name="炎律狂踏伤害" xml:space="preserve">
+    <value>Flame Rhythm Stomp Damage</value>
+    <comment>Chinese: 炎律狂踏伤害</comment>
+  </data>
+  <data name="炎律狂踏治疗" xml:space="preserve">
+    <value>Flame Rhythm Stomp Healing</value>
+    <comment>Chinese: 炎律狂踏治疗</comment>
+  </data>
+  <data name="炎舞奏者" xml:space="preserve">
+    <value>Flame Dancer</value>
+    <comment>Chinese: 炎舞奏者</comment>
+  </data>
+  <data name="炽热清算" xml:space="preserve">
+    <value>Blazing Reckoning</value>
+    <comment>Chinese: 炽热清算</comment>
+  </data>
+  <data name="炽焰治愈" xml:space="preserve">
+    <value>Blazing Healing</value>
+    <comment>Chinese: 炽焰治愈</comment>
+  </data>
+  <data name="烈焰狂想" xml:space="preserve">
+    <value>Flame Fantasy</value>
+    <comment>Chinese: 烈焰狂想</comment>
+  </data>
+  <data name="烈焰狂想伤害" xml:space="preserve">
+    <value>Flame Fantasy Damage</value>
+    <comment>Chinese: 烈焰狂想伤害</comment>
+  </data>
+  <data name="烈焰狂想治疗" xml:space="preserve">
+    <value>Flame Fantasy Healing</value>
+    <comment>Chinese: 烈焰狂想治疗</comment>
+  </data>
+  <data name="烈焰音符伤害" xml:space="preserve">
+    <value>Flame Note Damage</value>
+    <comment>Chinese: 烈焰音符伤害</comment>
+  </data>
+  <data name="热情挥洒" xml:space="preserve">
+    <value>Passionate Performance</value>
+    <comment>Chinese: 热情挥洒</comment>
+  </data>
+  <data name="爆炸射击" xml:space="preserve">
+    <value>Explosive Shot</value>
+    <comment>Chinese: 爆炸射击</comment>
+  </data>
+  <data name="爆炸箭" xml:space="preserve">
+    <value>Explosive Arrow</value>
+    <comment>Chinese: 爆炸箭</comment>
+  </data>
+  <data name="爆炸箭BUFF引爆" xml:space="preserve">
+    <value>Explosive Arrow Buff Detonation</value>
+    <comment>Chinese: 爆炸箭BUFF引爆</comment>
+  </data>
+  <data name="爆炸箭二段" xml:space="preserve">
+    <value>Explosive Arrow Stage 2</value>
+    <comment>Chinese: 爆炸箭二段</comment>
+  </data>
+  <data name="爆炸箭引爆" xml:space="preserve">
+    <value>Explosive Arrow Detonation</value>
+    <comment>Chinese: 爆炸箭引爆</comment>
+  </data>
+  <data name="爆炸箭矢" xml:space="preserve">
+    <value>Explosive Arrow</value>
+    <comment>Chinese: 爆炸箭矢</comment>
+  </data>
+  <data name="爆炸箭矢_溅射_" xml:space="preserve">
+    <value>Explosive Arrow (Splash)</value>
+    <comment>Chinese: 爆炸箭矢（溅射）</comment>
+  </data>
+  <data name="狂野之种" xml:space="preserve">
+    <value>Wild Seed</value>
+    <comment>Chinese: 狂野之种</comment>
+  </data>
+  <data name="狂野召唤" xml:space="preserve">
+    <value>Wild Summon</value>
+    <comment>Chinese: 狂野召唤</comment>
+  </data>
+  <data name="狂野呼唤" xml:space="preserve">
+    <value>Wild Call</value>
+    <comment>Chinese: 狂野呼唤</comment>
+  </data>
+  <data name="狂野绽放" xml:space="preserve">
+    <value>Wild Bloom</value>
+    <comment>Chinese: 狂野绽放</comment>
+  </data>
+  <data name="狂野绽放治疗" xml:space="preserve">
+    <value>Wild Bloom Healing</value>
+    <comment>Chinese: 狂野绽放治疗</comment>
+  </data>
+  <data name="狼协同攻击" xml:space="preserve">
+    <value>Wolf Cooperative Attack</value>
+    <comment>Chinese: 狼协同攻击</comment>
+  </data>
+  <data name="狼普攻" xml:space="preserve">
+    <value>Wolf Basic Attack</value>
+    <comment>Chinese: 狼普攻</comment>
+  </data>
+  <data name="狼突击" xml:space="preserve">
+    <value>Wolf Assault</value>
+    <comment>Chinese: 狼突击</comment>
+  </data>
+  <data name="猎鹰出击" xml:space="preserve">
+    <value>Falcon Strike</value>
+    <comment>Chinese: 猎鹰出击</comment>
+  </data>
+  <data name="猛烈挥击" xml:space="preserve">
+    <value>Fierce Strike</value>
+    <comment>Chinese: 猛烈挥击</comment>
+  </data>
+  <data name="琴弦叩击" xml:space="preserve">
+    <value>String Strike</value>
+    <comment>Chinese: 琴弦叩击</comment>
+  </data>
+  <data name="琴弦撩拨" xml:space="preserve">
+    <value>String Plucking</value>
+    <comment>Chinese: 琴弦撩拨</comment>
+  </data>
+  <data name="生命流失" xml:space="preserve">
+    <value>Life Drain</value>
+    <comment>Chinese: 生命流失</comment>
+  </data>
+  <data name="生命流失_光追箭引爆_" xml:space="preserve">
+    <value>Life Drain (Light Homing Arrow Trigger)</value>
+    <comment>Chinese: 生命流失（光追箭引爆）</comment>
+  </data>
+  <data name="生命流失_协同攻击引爆_" xml:space="preserve">
+    <value>Life Drain (Cooperative Attack Trigger)</value>
+    <comment>Chinese: 生命流失（协同攻击引爆）</comment>
+  </data>
+  <data name="生命流失_扑咬引爆_" xml:space="preserve">
+    <value>Life Drain (Pounce Bite Trigger)</value>
+    <comment>Chinese: 生命流失（扑咬引爆）</comment>
+  </data>
+  <data name="生命流失_扫尾引爆_" xml:space="preserve">
+    <value>Life Drain (Tail Sweep Trigger)</value>
+    <comment>Chinese: 生命流失（扫尾引爆）</comment>
+  </data>
+  <data name="生命绽放" xml:space="preserve">
+    <value>Life Bloom</value>
+    <comment>Chinese: 生命绽放</comment>
+  </data>
+  <data name="生命馈赠_治疗子buff" xml:space="preserve">
+    <value>Life Gift - Healing Sub Buff</value>
+    <comment>Chinese: 生命馈赠-治疗子buff</comment>
+  </data>
+  <data name="甩尾" xml:space="preserve">
+    <value>Tail Swipe</value>
+    <comment>Chinese: 甩尾</comment>
+  </data>
+  <data name="疾风刺" xml:space="preserve">
+    <value>Swift Wind Thrust</value>
+    <comment>Chinese: 疾风刺</comment>
+  </data>
+  <data name="疾驰锋刃" xml:space="preserve">
+    <value>Swift Edge</value>
+    <comment>Chinese: 疾驰锋刃</comment>
+  </data>
+  <data name="盛放注能_包含伤害和治疗_" xml:space="preserve">
+    <value>Bloom Infusion (Damage and Healing)</value>
+    <comment>Chinese: 盛放注能(包含伤害和治疗)</comment>
+  </data>
+  <data name="看破斩" xml:space="preserve">
+    <value>See-Through Slash</value>
+    <comment>Chinese: 看破斩</comment>
+  </data>
+  <data name="瞬发寒冰风暴" xml:space="preserve">
+    <value>Instant Ice Storm</value>
+    <comment>Chinese: 瞬发寒冰风暴</comment>
+  </data>
+  <data name="砂岩之握" xml:space="preserve">
+    <value>Sandstone Grip</value>
+    <comment>Chinese: 砂岩之握</comment>
+  </data>
+  <data name="砂石复苏" xml:space="preserve">
+    <value>Sandstone Revival</value>
+    <comment>Chinese: 砂石复苏</comment>
+  </data>
+  <data name="砂石斗篷_初始_" xml:space="preserve">
+    <value>Sandstone Cloak (Initial)</value>
+    <comment>Chinese: 砂石斗篷（初始）</comment>
+  </data>
+  <data name="砂石斗篷_持续_" xml:space="preserve">
+    <value>Sandstone Cloak (Duration)</value>
+    <comment>Chinese: 砂石斗篷（持续）</comment>
+  </data>
+  <data name="破追" xml:space="preserve">
+    <value>Break Chase</value>
+    <comment>Chinese: 破追</comment>
+  </data>
+  <data name="碎星冲" xml:space="preserve">
+    <value>Shattered Star Charge</value>
+    <comment>Chinese: 碎星冲</comment>
+  </data>
+  <data name="碎星崩裂" xml:space="preserve">
+    <value>Shattered Star Collapse</value>
+    <comment>Chinese: 碎星崩裂</comment>
+  </data>
+  <data name="神圣之击" xml:space="preserve">
+    <value>Divine Strike</value>
+    <comment>Chinese: 神圣之击</comment>
+  </data>
+  <data name="神圣光辉" xml:space="preserve">
+    <value>Divine Radiance</value>
+    <comment>Chinese: 神圣光辉</comment>
+  </data>
+  <data name="神圣印记" xml:space="preserve">
+    <value>Divine Mark</value>
+    <comment>Chinese: 神圣印记</comment>
+  </data>
+  <data name="神圣壁垒" xml:space="preserve">
+    <value>Divine Barrier</value>
+    <comment>Chinese: 神圣壁垒</comment>
+  </data>
+  <data name="神影斩" xml:space="preserve">
+    <value>Divine Shadow Slash</value>
+    <comment>Chinese: 神影斩</comment>
+  </data>
+  <data name="神影斩_最后一击" xml:space="preserve">
+    <value>Divine Shadow Slash - Final Strike</value>
+    <comment>Chinese: 神影斩-最后一击</comment>
+  </data>
+  <data name="神影螺旋" xml:space="preserve">
+    <value>Divine Shadow Spiral</value>
+    <comment>Chinese: 神影螺旋</comment>
+  </data>
+  <data name="神罚之镰" xml:space="preserve">
+    <value>Divine Punishment Scythe</value>
+    <comment>Chinese: 神罚之镰</comment>
+  </data>
+  <data name="空中射击" xml:space="preserve">
+    <value>Aerial Shot</value>
+    <comment>Chinese: 空中射击</comment>
+  </data>
+  <data name="箭雨" xml:space="preserve">
+    <value>Arrow Rain</value>
+    <comment>Chinese: 箭雨</comment>
+  </data>
+  <data name="精神凝聚" xml:space="preserve">
+    <value>Mental Focus</value>
+    <comment>Chinese: 精神凝聚</comment>
+  </data>
+  <data name="绝技__电磁爆弹_枪手_" xml:space="preserve">
+    <value>Ultimate Skill! Electromagnetic Bomb (Gunner)</value>
+    <comment>Chinese: 绝技! 电磁爆弹(枪手)</comment>
+  </data>
+  <data name="绝技__纷乱飞弹_虚蚀食人魔_1" xml:space="preserve">
+    <value>Ultimate Skill! Chaotic Missiles (Void Ogre) 1</value>
+    <comment>Chinese: 绝技! 纷乱飞弹(虚蚀食人魔)1</comment>
+  </data>
+  <data name="绝技__纷乱飞弹_虚蚀食人魔_2" xml:space="preserve">
+    <value>Ultimate Skill! Chaotic Missiles (Void Ogre) 2</value>
+    <comment>Chinese: 绝技! 纷乱飞弹(虚蚀食人魔)2</comment>
+  </data>
+  <data name="绝技__纷乱飞弹_虚蚀食人魔_3" xml:space="preserve">
+    <value>Ultimate Skill! Chaotic Missiles (Void Ogre) 3</value>
+    <comment>Chinese: 绝技! 纷乱飞弹(虚蚀食人魔)3</comment>
+  </data>
+  <data name="绝技__纷乱飞弹_虚蚀食人魔_4" xml:space="preserve">
+    <value>Ultimate Skill! Chaotic Missiles (Void Ogre) 4</value>
+    <comment>Chinese: 绝技! 纷乱飞弹(虚蚀食人魔)4</comment>
+  </data>
+  <data name="绝技__纷乱飞弹_虚蚀食人魔_5" xml:space="preserve">
+    <value>Ultimate Skill! Chaotic Missiles (Void Ogre) 5</value>
+    <comment>Chinese: 绝技! 纷乱飞弹(虚蚀食人魔)5</comment>
+  </data>
+  <data name="绝技__纷乱飞弹_虚食人魔_" xml:space="preserve">
+    <value>Ultimate Skill! Chaotic Missiles (Void Ogre)</value>
+    <comment>Chinese: 绝技! 纷乱飞弹(虚食人魔)</comment>
+  </data>
+  <data name="绝技__超重斩_黯影剑士队长_" xml:space="preserve">
+    <value>Ultimate Skill! Super Heavy Slash (Shadow Swordsman Captain)</value>
+    <comment>Chinese: 绝技! 超重斩(黯影剑士队长)</comment>
+  </data>
+  <data name="绝技__追猎猛斩_尖兵_" xml:space="preserve">
+    <value>Ultimate Skill! Hunting Fierce Slash (Scout)</value>
+    <comment>Chinese: 绝技! 追猎猛斩(尖兵)</comment>
+  </data>
+  <data name="绝技__雷光球_雷光野猪_" xml:space="preserve">
+    <value>Ultimate Skill! Lightning Ball (Thunder Boar)</value>
+    <comment>Chinese: 绝技! 雷光球(雷光野猪)</comment>
+  </data>
+  <data name="绝技！大地之盾_山贼护卫队长_" xml:space="preserve">
+    <value>Ultimate Skill! Earth Shield (Bandit Guard Captain)</value>
+    <comment>Chinese: 绝技！大地之盾(山贼护卫队长)</comment>
+  </data>
+  <data name="绝技！强压之雷_蜥蜴人猎手__主动_" xml:space="preserve">
+    <value>Ultimate Skill! Oppressive Thunder (Lizardman Hunter) (Active)</value>
+    <comment>Chinese: 绝技！强压之雷(蜥蜴人猎手)(主动)</comment>
+  </data>
+  <data name="绝技！无形冲击_巨魔_" xml:space="preserve">
+    <value>Ultimate Skill! Invisible Impact (Troll)</value>
+    <comment>Chinese: 绝技！无形冲击(巨魔)</comment>
+  </data>
+  <data name="绝技！猪突猛进_威猛野猪_" xml:space="preserve">
+    <value>Ultimate Skill! Boar Charge (Mighty Boar)</value>
+    <comment>Chinese: 绝技！猪突猛进(威猛野猪)</comment>
+  </data>
+  <data name="绝技！瞬步奇袭_山贼斥候_" xml:space="preserve">
+    <value>Ultimate Skill! Flash Step Assault (Bandit Scout)</value>
+    <comment>Chinese: 绝技！瞬步奇袭（山贼斥候）</comment>
+  </data>
+  <data name="绝技！碎星陨落_火哥_" xml:space="preserve">
+    <value>Ultimate Skill! Shattered Star Fall (Fire Goblin)</value>
+    <comment>Chinese: 绝技！碎星陨落（火哥）</comment>
+  </data>
+  <data name="绝技！超会心_姆克兵长_" xml:space="preserve">
+    <value>Ultimate Skill! Super Critical (Muk Sergeant)</value>
+    <comment>Chinese: 绝技！超会心(姆克兵长)</comment>
+  </data>
+  <data name="绝技！静默之水_蜥蜴人法师_" xml:space="preserve">
+    <value>Ultimate Skill! Silent Water (Lizardman Mage)</value>
+    <comment>Chinese: 绝技！静默之水(蜥蜴人法师)</comment>
+  </data>
+  <data name="绿意之爆发_治疗_" xml:space="preserve">
+    <value>Green Burst (Healing)</value>
+    <comment>Chinese: 绿意之爆发（治疗）</comment>
+  </data>
+  <data name="缭乱兜割" xml:space="preserve">
+    <value>Chaotic Slash</value>
+    <comment>Chinese: 缭乱兜割</comment>
+  </data>
+  <data name="群兽践踏" xml:space="preserve">
+    <value>Beast Stampede</value>
+    <comment>Chinese: 群兽践踏</comment>
+  </data>
+  <data name="翔返" xml:space="preserve">
+    <value>Soaring Return</value>
+    <comment>Chinese: 翔返</comment>
+  </data>
+  <data name="聚合乐章" xml:space="preserve">
+    <value>Harmony Movement</value>
+    <comment>Chinese: 聚合乐章</comment>
+  </data>
+  <data name="聚合乐章_安可治疗相关" xml:space="preserve">
+    <value>Harmony Movement/Encore Healing Related</value>
+    <comment>Chinese: 聚合乐章/安可治疗相关</comment>
+  </data>
+  <data name="聚能射击" xml:space="preserve">
+    <value>Energy Focused Shot</value>
+    <comment>Chinese: 聚能射击</comment>
+  </data>
+  <data name="艾露娜护盾" xml:space="preserve">
+    <value>Elena Shield</value>
+    <comment>Chinese: 艾露娜护盾</comment>
+  </data>
+  <data name="花语回升" xml:space="preserve">
+    <value>Floral Recovery</value>
+    <comment>Chinese: 花语回升</comment>
+  </data>
+  <data name="英勇乐章治疗" xml:space="preserve">
+    <value>Heroic Movement Healing</value>
+    <comment>Chinese: 英勇乐章治疗</comment>
+  </data>
+  <data name="英勇盾击" xml:space="preserve">
+    <value>Heroic Shield Strike</value>
+    <comment>Chinese: 英勇盾击</comment>
+  </data>
+  <data name="荆棘" xml:space="preserve">
+    <value>Thorns</value>
+    <comment>Chinese: 荆棘</comment>
+  </data>
+  <data name="获得护盾时造成aoe_套装_" xml:space="preserve">
+    <value>AOE on Shield Gain (Set)</value>
+    <comment>Chinese: 获得护盾时造成aoe（套装）</comment>
+  </data>
+  <data name="蒂娜龙卷" xml:space="preserve">
+    <value>Tina Tornado</value>
+    <comment>Chinese: 蒂娜龙卷</comment>
+  </data>
+  <data name="虚蚀之影爆炸" xml:space="preserve">
+    <value>Void Shadow Explosion</value>
+    <comment>Chinese: 虚蚀之影爆炸</comment>
+  </data>
+  <data name="虚蚀伤害" xml:space="preserve">
+    <value>Void Erosion Damage</value>
+    <comment>Chinese: 虚蚀伤害</comment>
+  </data>
+  <data name="虚蚀光环" xml:space="preserve">
+    <value>Void Aura</value>
+    <comment>Chinese: 虚蚀光环</comment>
+  </data>
+  <data name="虚蚀波动回血" xml:space="preserve">
+    <value>Void Pulse Healing</value>
+    <comment>Chinese: 虚蚀波动回血</comment>
+  </data>
+  <data name="虚蚀波动爆炸" xml:space="preserve">
+    <value>Void Pulse Explosion</value>
+    <comment>Chinese: 虚蚀波动爆炸</comment>
+  </data>
+  <data name="虚蚀脉冲" xml:space="preserve">
+    <value>Void Pulse</value>
+    <comment>Chinese: 虚蚀脉冲</comment>
+  </data>
+  <data name="虚蚀食人魔" xml:space="preserve">
+    <value>Void Erosion Ogre</value>
+    <comment>Chinese: 虚蚀食人魔</comment>
+  </data>
+  <data name="蜥蜴人猎手_被动_" xml:space="preserve">
+    <value>Lizardman Hunter (Passive)</value>
+    <comment>Chinese: 蜥蜴人猎手（被动）</comment>
+  </data>
+  <data name="蜥蜴人王被动" xml:space="preserve">
+    <value>Lizardman King Passive</value>
+    <comment>Chinese: 蜥蜴人王被动</comment>
+  </data>
+  <data name="螺旋击刺" xml:space="preserve">
+    <value>Spiral Strike</value>
+    <comment>Chinese: 螺旋击刺</comment>
+  </data>
+  <data name="螺旋演奏" xml:space="preserve">
+    <value>Spiral Performance</value>
+    <comment>Chinese: 螺旋演奏</comment>
+  </data>
+  <data name="裁决" xml:space="preserve">
+    <value>Verdict</value>
+    <comment>Chinese: 裁决</comment>
+  </data>
+  <data name="裁决_神圣触发_" xml:space="preserve">
+    <value>Verdict (Divine Trigger)</value>
+    <comment>Chinese: 裁决(神圣触发)</comment>
+  </data>
+  <data name="裁决治疗" xml:space="preserve">
+    <value>Verdict Healing</value>
+    <comment>Chinese: 裁决治疗</comment>
+  </data>
+  <data name="贯穿冰矛" xml:space="preserve">
+    <value>Piercing Ice Spear</value>
+    <comment>Chinese: 贯穿冰矛</comment>
+  </data>
+  <data name="超高出力" xml:space="preserve">
+    <value>Super High Output</value>
+    <comment>Chinese: 超高出力</comment>
+  </data>
+  <data name="践踏" xml:space="preserve">
+    <value>Trample</value>
+    <comment>Chinese: 践踏</comment>
+  </data>
+  <data name="锐利冲击_风神_" xml:space="preserve">
+    <value>Sharp Impact (Wind God)</value>
+    <comment>Chinese: 锐利冲击(风神)</comment>
+  </data>
+  <data name="锐眼_光能巨箭" xml:space="preserve">
+    <value>Sharp Eye: Light Energy Giant Arrow</value>
+    <comment>Chinese: 锐眼·光能巨箭</comment>
+  </data>
+  <data name="锐眼_光能巨箭_天赋_" xml:space="preserve">
+    <value>Sharp Eye: Light Energy Giant Arrow (Talent)</value>
+    <comment>Chinese: 锐眼·光能巨箭(天赋)</comment>
+  </data>
+  <data name="锐眼_光能巨箭_聚怪_天赋_" xml:space="preserve">
+    <value>Sharp Eye: Light Energy Giant Arrow - Gather Monsters (Talent)</value>
+    <comment>Chinese: 锐眼·光能巨箭-聚怪(天赋)</comment>
+  </data>
+  <data name="镰车" xml:space="preserve">
+    <value>Scythe Wheel</value>
+    <comment>Chinese: 镰车</comment>
+  </data>
+  <data name="长矛贯穿" xml:space="preserve">
+    <value>Spear Penetration</value>
+    <comment>Chinese: 长矛贯穿</comment>
+  </data>
+  <data name="闪电冲击" xml:space="preserve">
+    <value>Lightning Impact</value>
+    <comment>Chinese: 闪电冲击</comment>
+  </data>
+  <data name="陨星风暴" xml:space="preserve">
+    <value>Meteor Storm</value>
+    <comment>Chinese: 陨星风暴</comment>
+  </data>
+  <data name="雨打潮生" xml:space="preserve">
+    <value>Rain and Tide</value>
+    <comment>Chinese: 雨打潮生</comment>
+  </data>
+  <data name="雨打潮生_普攻1段" xml:space="preserve">
+    <value>Rain and Tide - Basic Attack 1</value>
+    <comment>Chinese: 雨打潮生-普攻1段</comment>
+  </data>
+  <data name="雨打潮生_转弯子弹" xml:space="preserve">
+    <value>Rain and Tide - Homing Projectile</value>
+    <comment>Chinese: 雨打潮生-转弯子弹</comment>
+  </data>
+  <data name="雷击" xml:space="preserve">
+    <value>Lightning Strike</value>
+    <comment>Chinese: 雷击</comment>
+  </data>
+  <data name="雷切" xml:space="preserve">
+    <value>Thunder Cut</value>
+    <comment>Chinese: 雷切</comment>
+  </data>
+  <data name="雷电之种_奥尔维拉_" xml:space="preserve">
+    <value>Lightning Seed (Oliveira)</value>
+    <comment>Chinese: 雷电之种(奥尔维拉)</comment>
+  </data>
+  <data name="雷霆之镰" xml:space="preserve">
+    <value>Thunder Scythe</value>
+    <comment>Chinese: 雷霆之镰</comment>
+  </data>
+  <data name="雷霆之镰_触发霹雳升龙斩时_" xml:space="preserve">
+    <value>Thunder Scythe (When Triggering Thunder Rising Dragon Slash)</value>
+    <comment>Chinese: 雷霆之镰(触发霹雳升龙斩时)</comment>
+  </data>
+  <data name="雷霆居合斩" xml:space="preserve">
+    <value>Thunder Iaido Slash</value>
+    <comment>Chinese: 雷霆居合斩</comment>
+  </data>
+  <data name="雷魔被动" xml:space="preserve">
+    <value>Thunder Demon Passive</value>
+    <comment>Chinese: 雷魔被动</comment>
+  </data>
+  <data name="霹雳升龙斩" xml:space="preserve">
+    <value>Thunder Rising Dragon Slash</value>
+    <comment>Chinese: 霹雳升龙斩</comment>
+  </data>
+  <data name="霹雳连斩" xml:space="preserve">
+    <value>Thunder Chain Slash</value>
+    <comment>Chinese: 霹雳连斩</comment>
+  </data>
+  <data name="霹雳连斩2" xml:space="preserve">
+    <value>Thunder Chain Slash 2</value>
+    <comment>Chinese: 霹雳连斩2</comment>
+  </data>
+  <data name="霹雳连斩3" xml:space="preserve">
+    <value>Thunder Chain Slash 3</value>
+    <comment>Chinese: 霹雳连斩3</comment>
+  </data>
+  <data name="音响奶棍" xml:space="preserve">
+    <value>Sound Healing Staff</value>
+    <comment>Chinese: 音响奶棍</comment>
+  </data>
+  <data name="音塔爆炎冲击" xml:space="preserve">
+    <value>Sound Tower Flame Impact</value>
+    <comment>Chinese: 音塔爆炎冲击</comment>
+  </data>
+  <data name="音波裁决" xml:space="preserve">
+    <value>Sound Wave Judgment</value>
+    <comment>Chinese: 音波裁决</comment>
+  </data>
+  <data name="音浪" xml:space="preserve">
+    <value>Sound Wave</value>
+    <comment>Chinese: 音浪</comment>
+  </data>
+  <data name="音浪潮涌" xml:space="preserve">
+    <value>Sound Wave Surge</value>
+    <comment>Chinese: 音浪潮涌</comment>
+  </data>
+  <data name="音浪烈焰" xml:space="preserve">
+    <value>Sound Wave Flame</value>
+    <comment>Chinese: 音浪烈焰</comment>
+  </data>
+  <data name="音符" xml:space="preserve">
+    <value>Note</value>
+    <comment>Chinese: 音符</comment>
+  </data>
+  <data name="风华翔舞" xml:space="preserve">
+    <value>Wind Dance</value>
+    <comment>Chinese: 风华翔舞</comment>
+  </data>
+  <data name="风哥布林王_被动_" xml:space="preserve">
+    <value>Wind Goblin King (Passive)</value>
+    <comment>Chinese: 风哥布林王(被动)</comment>
+  </data>
+  <data name="风姿卓绝" xml:space="preserve">
+    <value>Graceful Wind Stance</value>
+    <comment>Chinese: 风姿卓绝</comment>
+  </data>
+  <data name="风神" xml:space="preserve">
+    <value>Wind God</value>
+    <comment>Chinese: 风神</comment>
+  </data>
+  <data name="风神_破阵之风" xml:space="preserve">
+    <value>Wind God: Formation-Breaking Wind</value>
+    <comment>Chinese: 风神·破阵之风</comment>
+  </data>
+  <data name="风螺旋_螺旋引爆" xml:space="preserve">
+    <value>Wind Spiral/Spiral Detonation</value>
+    <comment>Chinese: 风螺旋/螺旋引爆</comment>
+  </data>
+  <data name="飓风哥布林战士" xml:space="preserve">
+    <value>Hurricane Goblin Warrior</value>
+    <comment>Chinese: 飓风哥布林战士</comment>
+  </data>
+  <data name="飞雷神" xml:space="preserve">
+    <value>Flying Thunder God</value>
+    <comment>Chinese: 飞雷神</comment>
+  </data>
+  <data name="飞鸟投" xml:space="preserve">
+    <value>Bird Throw</value>
+    <comment>Chinese: 飞鸟投</comment>
+  </data>
+  <data name="魔法箭矢" xml:space="preserve">
+    <value>Magic Arrow</value>
+    <comment>Chinese: 魔法箭矢</comment>
+  </data>
+  <data name="鸣奏_愈合乐章" xml:space="preserve">
+    <value>Playing: Healing Movement</value>
+    <comment>Chinese: 鸣奏·愈合乐章</comment>
+  </data>
+  <data name="鸣奏_英勇乐章" xml:space="preserve">
+    <value>Playing: Heroic Movement</value>
+    <comment>Chinese: 鸣奏·英勇乐章</comment>
+  </data>
+  <data name="鹿之奔袭" xml:space="preserve">
+    <value>Deer Rush</value>
+    <comment>Chinese: 鹿之奔袭</comment>
+  </data>
+  <data name="龙击炮" xml:space="preserve">
+    <value>Dragon Strike Cannon</value>
+    <comment>Chinese: 龙击炮</comment>
+  </data>
+  <data name="龙卷风" xml:space="preserve">
+    <value>Tornado</value>
+    <comment>Chinese: 龙卷风</comment>
+  </data>
+</root>
