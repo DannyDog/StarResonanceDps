@@ -1,3 +1,8 @@
+A fork of https://github.com/anying1073/StarResonanceDps
+
+I just translated it and fixed some bugs.
+The owners are working on another release soon that will include translations.
+
 # 星痕共鸣DPS统计工具
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-brightgreen.svg)](https://www.gnu.org/licenses/agpl-3.0.txt)
