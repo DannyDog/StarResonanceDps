@@ -781,4 +781,7 @@
   <data name="SkillDetail_HitCount" xml:space="preserve">
     <value>命中次数</value>
   </data>
+  <data name="ModuleName_AdvancedAttack" xml:space="preserve">
+    <value>基础攻击</value>
+  </data>
 </root>

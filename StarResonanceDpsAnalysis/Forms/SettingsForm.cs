@@ -1,5 +1,6 @@
 ﻿using AntdUI;
 using DocumentFormat.OpenXml.Math;
+using StarResonanceDpsAnalysis.Core;
 using StarResonanceDpsAnalysis.Effects;
 using StarResonanceDpsAnalysis.Forms.PopUp;
 using StarResonanceDpsAnalysis.Plugin;
@@ -183,6 +184,8 @@ namespace StarResonanceDpsAnalysis.Forms
                 FormManager.moduleCalculationForm.ApplyLocalization(); //has to be open TODO come back, already applies when constructor
             if (FormManager.skillDetailForm != null)
                 FormManager.skillDetailForm.ApplyLocalization();
+
+            EmbeddedSkillConfig.cachedSkillNames.Clear(); // Clear cached skill names to reflect language change
 
             this.Close();
         }

@@ -274,7 +274,7 @@
     <value>Basic Attack</value>
   </data>
   <data name="ModuleName_HighPerformanceAttack" xml:space="preserve">
-    <value>High Performance Attack</value>
+    <value>Excellent Attack Premium</value>
   </data>
   <data name="ModuleName_ExcellentAttack" xml:space="preserve">
     <value>Excellent Attack</value>
@@ -283,7 +283,7 @@
     <value>Basic Healing</value>
   </data>
   <data name="ModuleName_HighPerformanceHealing" xml:space="preserve">
-    <value>High Performance Healing</value>
+    <value>Excellent Support Premium</value>
   </data>
   <data name="ModuleName_ExcellentHealing" xml:space="preserve">
     <value>Excellent Support</value>
@@ -292,7 +292,7 @@
     <value>Basic Protection</value>
   </data>
   <data name="ModuleName_HighPerformanceProtection" xml:space="preserve">
-    <value>High Performance Guardian</value>
+    <value>Excellent Guardian Premium</value>
   </data>
   <data name="ModuleName_ExcellentProtection" xml:space="preserve">
     <value>Excellent Guardian</value>
@@ -337,28 +337,28 @@
     <value>Physical Resistance</value>
   </data>
   <data name="ModuleAttr_ExtremeDamageStack" xml:space="preserve">
-    <value>Extreme Damage Stack</value>
+    <value>Damage Stack</value>
   </data>
   <data name="ModuleAttr_ExtremeFlexibleMovement" xml:space="preserve">
-    <value>Extreme Flexible Movement</value>
+    <value>Agile</value>
   </data>
   <data name="ModuleAttr_ExtremeLifeConvergence" xml:space="preserve">
-    <value>Extreme Life Convergence</value>
+    <value>Life Condense</value>
   </data>
   <data name="ModuleAttr_ExtremeEmergencyMeasures" xml:space="preserve">
-    <value>Extreme Emergency Measures</value>
+    <value>First Aid</value>
   </data>
   <data name="ModuleAttr_ExtremeLifeFluctuation" xml:space="preserve">
-    <value>Extreme Life Fluctuation</value>
+    <value>Life Wave</value>
   </data>
   <data name="ModuleAttr_ExtremeLifeDrain" xml:space="preserve">
-    <value>Extreme Life Drain</value>
+    <value>Life Steal</value>
   </data>
   <data name="ModuleAttr_ExtremeTeamCrit" xml:space="preserve">
-    <value>Extreme Team Crit</value>
+    <value>Team Luck &amp; Crit</value>
   </data>
   <data name="ModuleAttr_ExtremeDesperateGuardian" xml:space="preserve">
-    <value>Extreme Desperate Guardian</value>
+    <value>Final Protection</value>
   </data>
   <data name="ModuleCategory_Attack" xml:space="preserve">
     <value>Attack</value>
@@ -773,5 +773,8 @@
   </data>
   <data name="SkillDetail_HitCount" xml:space="preserve">
     <value>Hit Count</value>
+  </data>
+  <data name="ModuleName_AdvancedAttack" xml:space="preserve">
+    <value>Advanced Attack</value>
   </data>
 </root>

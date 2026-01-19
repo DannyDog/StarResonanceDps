@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -388,6 +389,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
             }
 
             int thresholdPower = 0;
+
             foreach (var (attrName, attrValue) in breakdown)
             {
                 int maxLevel = 0;
@@ -397,7 +399,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
                     else break;
                 }
 
-                var attrType = _attrNameTypeMap.TryGetValue(attrName, out var t) ? t : "basic";
+                var attrType = ModuleMaps.ATTR_NAME_TYPE_MAP.TryGetValue(attrName, out var t) ? t : "basic"; //this funky shit didnt take into account translated text. who the fk hardcodes this shit with strings?
                 var map = (attrType == "special") ? _specialAttrPowerMap : _basicAttrPowerMap;
                 if (maxLevel > 0 && map.TryGetValue(maxLevel, out var add))
                     thresholdPower += add;
@@ -450,7 +452,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
         // ====== 贪心构造初始解（4件） ======
         public ModuleSolution GreedyConstructSolution(IReadOnlyList<IModuleInfo> modules)
         {
-            if (modules.Count < 4) return null;
+            if (modules.Count < 1) return null;
 
             var current = new List<IModuleInfo> { modules[_rand.Next(modules.Count)] };
 
@@ -545,7 +547,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
                 ? modules.ToList()
                 : modules.Where(m => GetModuleCategory(m) == category).ToList();
 
-            if (filtered.Count < 4) return new List<ModuleSolution>();
+            if (filtered.Count < 1) return new List<ModuleSolution>();
 
             // 预筛选
             var candidates = PrefilterModules(filtered);

@@ -7,7 +7,8 @@ namespace StarResonanceDpsAnalysis.Core.Module
     public enum ModuleType : int
     {
         BASIC_ATTACK = 5500101,
-        HIGH_PERFORMANCE_ATTACK = 5500102,
+        ADVANCED_ATTACK = 5500102,
+        HIGH_PERFORMANCE_ATTACK = 5500104, // 5500102 = old incorrect
         EXCELLENT_ATTACK = 5500103,
         BASIC_HEALING = 5500201,
         HIGH_PERFORMANCE_HEALING = 5500202,
@@ -77,6 +78,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
             id switch
             {
                 (int)ModuleType.BASIC_ATTACK => Properties.Strings.ModuleName_BasicAttack,
+                (int)ModuleType.ADVANCED_ATTACK => Properties.Strings.ModuleName_AdvancedAttack,
                 (int)ModuleType.HIGH_PERFORMANCE_ATTACK => Properties.Strings.ModuleName_HighPerformanceAttack,
                 (int)ModuleType.EXCELLENT_ATTACK => Properties.Strings.ModuleName_ExcellentAttack,
                 (int)ModuleType.BASIC_HEALING => Properties.Strings.ModuleName_BasicHealing,
@@ -174,6 +176,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
         public static readonly Dictionary<int, ModuleCategory> MODULE_CATEGORY_MAP = new()
         {
             { (int)ModuleType.BASIC_ATTACK, ModuleCategory.ATTACK },
+            { (int)ModuleType.ADVANCED_ATTACK, ModuleCategory.ATTACK },
             { (int)ModuleType.HIGH_PERFORMANCE_ATTACK, ModuleCategory.ATTACK },
             { (int)ModuleType.EXCELLENT_ATTACK, ModuleCategory.ATTACK },
             { (int)ModuleType.BASIC_PROTECTION, ModuleCategory.GUARDIAN },
@@ -261,27 +264,27 @@ namespace StarResonanceDpsAnalysis.Core.Module
         // "basic" / "special"
         public static readonly Dictionary<string, string> ATTR_NAME_TYPE_MAP = new()
         {
-            { "力量加持", "basic" },
-            { "敏捷加持", "basic" },
-            { "智力加持", "basic" },
-            { "特攻伤害", "basic" },
-            { "精英打击", "basic" },
-            { "特攻治疗加持", "basic" },
-            { "专精治疗加持", "basic" },
-            { "施法专注", "basic" },
-            { "攻速专注", "basic" },
-            { "暴击专注", "basic" },
-            { "幸运专注", "basic" },
-            { "抵御魔法", "basic" },
-            { "抵御物理", "basic" },
-            { "极-伤害叠加", "special" },
-            { "极-灵活身法", "special" },
-            { "极-生命凝聚", "special" },
-            { "极-急救措施", "special" },
-            { "极-生命波动", "special" },
-            { "极-生命汲取", "special" },
-            { "极-全队幸暴", "special" },
-            { "极-绝境守护", "special" },
+            { Properties.Strings.ModuleAttr_StrengthBoost, "basic" },
+            { Properties.Strings.ModuleAttr_AgilityBoost, "basic" },
+            { Properties.Strings.ModuleAttr_IntelligenceBoost, "basic" },
+            { Properties.Strings.ModuleAttr_SpecialAttackDamage, "basic" },
+            { Properties.Strings.ModuleAttr_EliteStrike, "basic" },
+            { Properties.Strings.ModuleAttr_SpecialHealingBoost, "basic" },
+            { Properties.Strings.ModuleAttr_ExpertHealingBoost, "basic" },
+            { Properties.Strings.ModuleAttr_CastingFocus, "basic" },
+            { Properties.Strings.ModuleAttr_AttackSpeedFocus, "basic" },
+            { Properties.Strings.ModuleAttr_CriticalFocus, "basic" },
+            { Properties.Strings.ModuleAttr_LuckFocus, "basic" },
+            { Properties.Strings.ModuleAttr_MagicResistance, "basic" },
+            { Properties.Strings.ModuleAttr_PhysicalResistance, "basic" },
+            { Properties.Strings.ModuleAttr_ExtremeDamageStack, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeFlexibleMovement, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeLifeConvergence, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeEmergencyMeasures, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeLifeFluctuation, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeLifeDrain, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeTeamCrit, "special" },
+            { Properties.Strings.ModuleAttr_ExtremeDesperateGuardian, "special" },
         };
     }
 }

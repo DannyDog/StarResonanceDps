@@ -307,7 +307,7 @@
   </data>
   <data name="ModuleName_HighPerformanceAttack" xml:space="preserve">
     <value>高性能攻击</value>
-    <comment>High Performance Attack</comment>
+    <comment>Excellent Attack Premium</comment>
   </data>
   <data name="ModuleName_ExcellentAttack" xml:space="preserve">
     <value>卓越攻击</value>
@@ -319,7 +319,7 @@
   </data>
   <data name="ModuleName_HighPerformanceHealing" xml:space="preserve">
     <value>高性能治疗</value>
-    <comment>High Performance Healing</comment>
+    <comment>Excellent Support Premium</comment>
   </data>
   <data name="ModuleName_ExcellentHealing" xml:space="preserve">
     <value>卓越辅助</value>
@@ -331,7 +331,7 @@
   </data>
   <data name="ModuleName_HighPerformanceProtection" xml:space="preserve">
     <value>高性能守护</value>
-    <comment>High Performance Guardian</comment>
+    <comment>Excellent Guardian Premium</comment>
   </data>
   <data name="ModuleName_ExcellentProtection" xml:space="preserve">
     <value>卓越守护</value>
@@ -854,5 +854,9 @@
   </data>
   <data name="SkillDetail_HitCount" xml:space="preserve">
     <value>命中次数</value>
+  </data>
+  <data name="ModuleName_AdvancedAttack" xml:space="preserve">
+    <value>基础攻击</value>
+    <comment>Advanced Attack</comment>
   </data>
 </root>

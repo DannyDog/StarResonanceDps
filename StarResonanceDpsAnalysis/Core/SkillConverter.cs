@@ -1,3 +1,6 @@
+using DocumentFormat.OpenXml.Spreadsheet;
+using System.Diagnostics;
+
 namespace StarResonanceDpsAnalysis.Core
 {
     // Auto-generated from skill_config.json (v2.0.1)
@@ -41,6 +44,7 @@ namespace StarResonanceDpsAnalysis.Core
     {
         public static readonly string Version = "2.0.1";      // ← 更新
         public static readonly string LastUpdated = "2025-01-20"; // ← 更新
+        public static Dictionary<string, string> cachedSkillNames = new();
 
         // 与 skill_config.json 的 elements 完全一致
         public static readonly Dictionary<ElementType, ElementInfo> Elements = new()
@@ -60,14 +64,19 @@ namespace StarResonanceDpsAnalysis.Core
             if (!SkillsById.TryGetValue(id, out var def))
                 return new SkillDefinition { NameKey = id, DescriptionKey = id, Type = SkillType.Unknown, Element = ElementType.Unknown };
 
+            if (!cachedSkillNames.TryGetValue(id, out var nameKey))
+            {
+                cachedSkillNames.Add(id, Properties.Skills.ResourceManager.GetString(def.NameKey) ?? def.NameKey);
+            }
+
             return new SkillDefinition
             {
                 NameKey = def.NameKey,
                 DescriptionKey = def.DescriptionKey,
                 Type = def.Type,
                 Element = def.Element,
-                Name = Properties.Skills.ResourceManager.GetString(def.NameKey) ?? def.NameKey,
-                Description = Properties.Skills.ResourceManager.GetString(def.DescriptionKey) ?? def.DescriptionKey
+                Name = cachedSkillNames[id] ?? def.NameKey,
+                Description = def.DescriptionKey
             };
         }
 

@@ -891,6 +891,15 @@ namespace StarResonanceDpsAnalysis.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 基础攻击.
         /// </summary>
+        internal static string ModuleName_AdvancedAttack {
+            get {
+                return ResourceManager.GetString("ModuleName_AdvancedAttack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 基础攻击.
+        /// </summary>
         internal static string ModuleName_BasicAttack {
             get {
                 return ResourceManager.GetString("ModuleName_BasicAttack", resourceCulture);

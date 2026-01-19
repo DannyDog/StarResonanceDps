@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -185,6 +186,7 @@ namespace StarResonanceDpsAnalysis.Forms.ModuleForm
 
                 // 综合评分（两段同一行，测一整段足够）
                 string scoreText = string.IsNullOrEmpty(card.Score) ? "—" : card.Score;
+
                 y += TextRenderer.MeasureText($"{Properties.Strings.ModuleCalc_TotalScore}{scoreText}", fontBody,
                       new Size(contentW, int.MaxValue), TextFormatFlags.WordBreak).Height + card.SectionGap;
 

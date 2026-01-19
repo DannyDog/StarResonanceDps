@@ -3,6 +3,7 @@ using StarResonanceDpsAnalysis.Forms;
 using StarResonanceDpsAnalysis.Properties;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using static StarResonanceDpsAnalysis.Core.Module.ModuleCardDisplay;
 using static StarResonanceDpsAnalysis.Core.Module.ModuleOptimizer;
@@ -89,7 +90,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
 
                         // 模组中文名（从映射表里取）
                         string module_name = ModuleMaps.MODULE_NAME_BY_ID(config_id); // ModuleMaps.MODULE_NAMES[config_id];
-
+                        // Debug.WriteLine(module_name + ":" + config_id);
                         var modParts = item.Value.ModNewAttr.ModParts;
 
                         // 取 ModInfos 里对应的属性值表
@@ -119,7 +120,9 @@ namespace StarResonanceDpsAnalysis.Core.Module
                                 //: $"未知属性({partId})";
 
                             int attrValue = init_link_nums[i];
-              
+
+                            // Debug.WriteLine(attrName + ":" + partId + ":" + attrValue);
+
                             // 构造 ModulePart
                             var modulePart = new ModulePart
                             {
@@ -338,7 +341,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
         public static void FilterModulesByAttributes(List<ModuleInfo> modules, string category)
         {
             // 0) 保护：数量不足 4 无法组成一套
-            if (modules == null || modules.Count < 4)
+            if (modules == null || modules.Count < 1)
             {
                 ModuleCardDisplay.ModuleResultMemory.Clear();
                 return;
