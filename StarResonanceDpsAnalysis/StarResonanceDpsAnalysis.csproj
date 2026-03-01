@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Assets\ApplicationIcon.ico</ApplicationIcon>
     <Platforms>AnyCPU;x86;x64</Platforms>
-    <Version>2.0.6</Version>
+    <Version>2.0.7</Version>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
