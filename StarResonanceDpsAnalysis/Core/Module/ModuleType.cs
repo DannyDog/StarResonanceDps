@@ -8,14 +8,18 @@ namespace StarResonanceDpsAnalysis.Core.Module
     {
         BASIC_ATTACK = 5500101,
         ADVANCED_ATTACK = 5500102,
-        HIGH_PERFORMANCE_ATTACK = 5500104, // 5500102 = old incorrect
         EXCELLENT_ATTACK = 5500103,
-        BASIC_HEALING = 5500201,
-        HIGH_PERFORMANCE_HEALING = 5500202,
-        EXCELLENT_HEALING = 5500203,
-        BASIC_PROTECTION = 5500301,
-        HIGH_PERFORMANCE_PROTECTION = 5500302,
-        EXCELLENT_PROTECTION = 5500303,
+        EXCELLENT_ATTACK_PREM = 5500104, // 5500102 = old incorrect
+
+        BASIC_SUPPORT = 5500201,
+        ADVANCED_SUPPORT = 5500202,
+        EXCELLENT_SUPPORT = 5500203,
+        EXCELLENT_SUPPORT_PREM = 5500204,
+
+        BASIC_GUARD = 5500301,
+        ADVANCED_GUARD = 5500302,
+        EXCELLENT_GUARD = 5500303,
+        EXCELLENT_GUARD_PREM = 5500304
     }
 
     public enum ModuleAttrType : int
@@ -49,7 +53,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
     public enum ModuleCategory
     {
         ATTACK,
-        GUARDIAN,
+        GUARD,
         SUPPORT,
         ALL
     }
@@ -79,14 +83,18 @@ namespace StarResonanceDpsAnalysis.Core.Module
             {
                 (int)ModuleType.BASIC_ATTACK => Properties.Strings.ModuleName_BasicAttack,
                 (int)ModuleType.ADVANCED_ATTACK => Properties.Strings.ModuleName_AdvancedAttack,
-                (int)ModuleType.HIGH_PERFORMANCE_ATTACK => Properties.Strings.ModuleName_HighPerformanceAttack,
                 (int)ModuleType.EXCELLENT_ATTACK => Properties.Strings.ModuleName_ExcellentAttack,
-                (int)ModuleType.BASIC_HEALING => Properties.Strings.ModuleName_BasicHealing,
-                (int)ModuleType.HIGH_PERFORMANCE_HEALING => Properties.Strings.ModuleName_HighPerformanceHealing,
-                (int)ModuleType.EXCELLENT_HEALING => Properties.Strings.ModuleName_ExcellentHealing, // 注意：Python里是“卓越辅助”
-                (int)ModuleType.BASIC_PROTECTION => Properties.Strings.ModuleName_BasicProtection,
-                (int)ModuleType.HIGH_PERFORMANCE_PROTECTION => Properties.Strings.ModuleName_HighPerformanceProtection,
-                (int)ModuleType.EXCELLENT_PROTECTION => Properties.Strings.ModuleName_ExcellentProtection,
+                (int)ModuleType.EXCELLENT_ATTACK_PREM => Properties.Strings.ModuleName_ExcellentAttackPrem,
+
+                (int)ModuleType.BASIC_SUPPORT => Properties.Strings.ModuleName_BasicSupport,
+                (int)ModuleType.ADVANCED_SUPPORT => Properties.Strings.ModuleName_AdvancedSupport,
+                (int)ModuleType.EXCELLENT_SUPPORT_PREM => Properties.Strings.ModuleName_ExcellentSupportPrem,
+                (int)ModuleType.EXCELLENT_SUPPORT => Properties.Strings.ModuleName_ExcellentSupport, // 注意：Python里是“卓越辅助”
+
+                (int)ModuleType.BASIC_GUARD => Properties.Strings.ModuleName_BasicGuard,
+                (int)ModuleType.ADVANCED_GUARD => Properties.Strings.ModuleName_AdvancedGuard,
+                (int)ModuleType.EXCELLENT_GUARD => Properties.Strings.ModuleName_ExcellentGuard,
+                (int)ModuleType.EXCELLENT_GUARD_PREM => Properties.Strings.ModuleName_ExcellentGuardPrem,
                 _ => string.Empty
             };
 
@@ -122,26 +130,26 @@ namespace StarResonanceDpsAnalysis.Core.Module
         public static readonly Dictionary<int, string> MODULE_NAMES = new()
         {
             { (int)ModuleType.BASIC_ATTACK, Properties.Strings.ModuleName_BasicAttack },
-            { (int)ModuleType.HIGH_PERFORMANCE_ATTACK, Properties.Strings.ModuleName_HighPerformanceAttack },
+            { (int)ModuleType.EXCELLENT_ATTACK_PREM, Properties.Strings.ModuleName_ExcellentAttackPrem },
             { (int)ModuleType.EXCELLENT_ATTACK, Properties.Strings.ModuleName_ExcellentAttack },
-            { (int)ModuleType.BASIC_HEALING, Properties.Strings.ModuleName_BasicHealing },
-            { (int)ModuleType.HIGH_PERFORMANCE_HEALING, Properties.Strings.ModuleName_HighPerformanceHealing },
-            { (int)ModuleType.EXCELLENT_HEALING, Properties.Strings.ModuleName_ExcellentHealing }, // 注意：Python里是“卓越辅助”
-            { (int)ModuleType.BASIC_PROTECTION, Properties.Strings.ModuleName_BasicProtection },
-            { (int)ModuleType.HIGH_PERFORMANCE_PROTECTION, Properties.Strings.ModuleName_HighPerformanceProtection },
-            { (int)ModuleType.EXCELLENT_PROTECTION, Properties.Strings.ModuleName_ExcellentProtection },
+            { (int)ModuleType.BASIC_SUPPORT, Properties.Strings.ModuleName_BasicSupport },
+            { (int)ModuleType.EXCELLENT_SUPPORT_PREM, Properties.Strings.ModuleName_ExcellentSupportPrem },
+            { (int)ModuleType.EXCELLENT_SUPPORT, Properties.Strings.ModuleName_ExcellentSupport }, // 注意：Python里是“卓越辅助”
+            { (int)ModuleType.BASIC_GUARD, Properties.Strings.ModuleName_BasicGuard },
+            { (int)ModuleType.EXCELLENT_GUARD, Properties.Strings.ModuleName_ExcellentGuard },
+            { (int)ModuleType.ADVANCED_GUARD, Properties.Strings.ModuleName_ExcellentGuard },
         };
         public static Dictionary<int, string> MODULE_NAMES_NEW = new()
         {
             { (int)ModuleType.BASIC_ATTACK, Properties.Strings.ModuleName_BasicAttack },
-            { (int)ModuleType.HIGH_PERFORMANCE_ATTACK, Properties.Strings.ModuleName_HighPerformanceAttack },
+            { (int)ModuleType.EXCELLENT_ATTACK_PREM, Properties.Strings.ModuleName_ExcellentAttackPrem },
             { (int)ModuleType.EXCELLENT_ATTACK, Properties.Strings.ModuleName_ExcellentAttack },
-            { (int)ModuleType.BASIC_HEALING, Properties.Strings.ModuleName_BasicHealing },
-            { (int)ModuleType.HIGH_PERFORMANCE_HEALING, Properties.Strings.ModuleName_HighPerformanceHealing },
-            { (int)ModuleType.EXCELLENT_HEALING, Properties.Strings.ModuleName_ExcellentHealing }, // 注意：Python里是“卓越辅助”
-            { (int)ModuleType.BASIC_PROTECTION, Properties.Strings.ModuleName_BasicProtection },
-            { (int)ModuleType.HIGH_PERFORMANCE_PROTECTION, Properties.Strings.ModuleName_HighPerformanceProtection },
-            { (int)ModuleType.EXCELLENT_PROTECTION, Properties.Strings.ModuleName_ExcellentProtection },
+            { (int)ModuleType.BASIC_SUPPORT, Properties.Strings.ModuleName_BasicSupport },
+            { (int)ModuleType.EXCELLENT_SUPPORT_PREM, Properties.Strings.ModuleName_ExcellentSupportPrem },
+            { (int)ModuleType.EXCELLENT_SUPPORT, Properties.Strings.ModuleName_ExcellentSupport }, // 注意：Python里是“卓越辅助”
+            { (int)ModuleType.BASIC_GUARD, Properties.Strings.ModuleName_BasicGuard },
+            { (int)ModuleType.EXCELLENT_GUARD, Properties.Strings.ModuleName_ExcellentGuard },
+            { (int)ModuleType.ADVANCED_GUARD, Properties.Strings.ModuleName_ExcellentGuard },
         };
 
         // 模组属性名称映射（与 Python MODULE_ATTR_NAMES 一致）
@@ -177,21 +185,25 @@ namespace StarResonanceDpsAnalysis.Core.Module
         {
             { (int)ModuleType.BASIC_ATTACK, ModuleCategory.ATTACK },
             { (int)ModuleType.ADVANCED_ATTACK, ModuleCategory.ATTACK },
-            { (int)ModuleType.HIGH_PERFORMANCE_ATTACK, ModuleCategory.ATTACK },
             { (int)ModuleType.EXCELLENT_ATTACK, ModuleCategory.ATTACK },
-            { (int)ModuleType.BASIC_PROTECTION, ModuleCategory.GUARDIAN },
-            { (int)ModuleType.HIGH_PERFORMANCE_PROTECTION, ModuleCategory.GUARDIAN },
-            { (int)ModuleType.EXCELLENT_PROTECTION, ModuleCategory.GUARDIAN },
-            { (int)ModuleType.BASIC_HEALING, ModuleCategory.SUPPORT },
-            { (int)ModuleType.HIGH_PERFORMANCE_HEALING, ModuleCategory.SUPPORT },
-            { (int)ModuleType.EXCELLENT_HEALING, ModuleCategory.SUPPORT },
+            { (int)ModuleType.EXCELLENT_ATTACK_PREM, ModuleCategory.ATTACK },
+
+            { (int)ModuleType.BASIC_GUARD, ModuleCategory.GUARD },
+            { (int)ModuleType.ADVANCED_GUARD, ModuleCategory.GUARD },
+            { (int)ModuleType.EXCELLENT_GUARD, ModuleCategory.GUARD },
+            { (int)ModuleType.EXCELLENT_GUARD_PREM, ModuleCategory.GUARD },
+
+            { (int)ModuleType.BASIC_SUPPORT, ModuleCategory.SUPPORT },
+            { (int)ModuleType.ADVANCED_SUPPORT, ModuleCategory.SUPPORT },
+            { (int)ModuleType.EXCELLENT_SUPPORT, ModuleCategory.SUPPORT },
+            { (int)ModuleType.EXCELLENT_SUPPORT_PREM, ModuleCategory.SUPPORT },
         };
 
         // 分类中文名（补齐 ALL）
         public static readonly Dictionary<ModuleCategory, string> MODULE_CATEGORY_NAMES = new()
         {
             { ModuleCategory.ATTACK, Properties.Strings.ModuleCategory_Attack },
-            { ModuleCategory.GUARDIAN, Properties.Strings.ModuleCategory_Guardian },
+            { ModuleCategory.GUARD, Properties.Strings.ModuleCategory_Guardian },
             { ModuleCategory.SUPPORT, Properties.Strings.ModuleCategory_Support },
             { ModuleCategory.ALL, Properties.Strings.ModuleCategory_All },
         };

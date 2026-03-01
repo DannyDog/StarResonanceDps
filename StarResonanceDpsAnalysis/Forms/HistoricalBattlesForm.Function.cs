@@ -16,8 +16,9 @@ namespace StarResonanceDpsAnalysis.Forms
 
             table_DpsDetailDataTable.Columns = new AntdUI.ColumnCollection
             {
+                /*
               new AntdUI.Column("Uid", "UID"),
-                new AntdUI.Column("NickName", "昵称"),
+                new AntdUI.Column("NickName", "昵称"), // im so lazy
                 new AntdUI.Column("Profession", "职业"),
                 new AntdUI.Column("CombatPower", "战力"),
                 new AntdUI.Column("TotalDamage", "总伤害"),
@@ -38,6 +39,29 @@ namespace StarResonanceDpsAnalysis.Forms
                 new AntdUI.Column("DamageTaken", "承受伤害总量"),
                // new AntdUI.Column("Share","占比"),
                 new AntdUI.Column("DmgShare","团队伤害占比(%)"),
+                */
+                              new AntdUI.Column("Uid", "UID"),
+                new AntdUI.Column("NickName", "Name"), // im so lazy
+                new AntdUI.Column("Profession", "Profession"),
+                new AntdUI.Column("CombatPower", "Ability Score"),
+                new AntdUI.Column("TotalDamage", "TotalDamage"),
+                new AntdUI.Column("TotalDps", "TotalDps"),
+                new AntdUI.Column("CritRate", "CritRate"),
+                new AntdUI.Column("LuckyRate", "LuckyRate"),
+                new AntdUI.Column("CriticalDamage", "CriticalDamage"),
+                new AntdUI.Column("LuckyDamage", "LuckyDamage"),
+                new AntdUI.Column("CritLuckyDamage", "CritLuckyDamage"),
+                new AntdUI.Column("MaxInstantDps", "MaxInstantDps"),
+
+                new AntdUI.Column("TotalHealingDone", "TotalHealing"),
+                new AntdUI.Column("TotalHps", "TotalHps"),
+                new AntdUI.Column("CriticalHealingDone", "CriticalHealingDone"),
+                new AntdUI.Column("LuckyHealingDone", "LuckyHealingDone"),
+                new AntdUI.Column("CritLuckyHealingDone", "CritLuckyHealingDone"),
+                new AntdUI.Column("MaxInstantHps", "MaxInstantHps"),
+                new AntdUI.Column("DamageTaken", "DamageTaken"),
+               // new AntdUI.Column("Share","占比"),
+                new AntdUI.Column("DmgShare","DmgShare(%)"),
             };
 
             table_DpsDetailDataTable.Binding(DpsTableDatas.DpsTable);

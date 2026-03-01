@@ -1,7 +1,10 @@
-﻿using BlueProto;
+﻿using AntdUI;
+using BlueProto;
+using DocumentFormat.OpenXml.EMMA;
 using StarResonanceDpsAnalysis.Core;
 using StarResonanceDpsAnalysis.Forms;
 using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Timers;
 using System.Xml.Linq;
 using static StarResonanceDpsAnalysis.Plugin.DamageStatistics.PlayerDataManager;
@@ -109,6 +112,10 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
         /// <summary>单次命中最小值（非 0；初值为 <see cref="ulong.MaxValue"/> 以便正确取 min）。</summary>
         public ulong MinSingleHit { get; private set; } = ulong.MaxValue;
 
+        public ulong HighestNonCrit { get; private set; }
+
+        public ulong HighestCrit { get; private set; }
+
         #endregion
 
         #region 次数统计（只读属性，内部递增）
@@ -151,7 +158,9 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
         private DateTime? _endTime;
 
         /// <summary>最后一次记录时间（对外暴露只读）。</summary>
-        public DateTime? LastRecordTime => _endTime;
+        public DateTime? LastRecordTime => _endTime; //getter
+
+        public double Interval { get; set; }
 
         #endregion
 
@@ -191,11 +200,21 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
             }
             else Normal += value;
 
-
             Total += value;
             HpLessen += hpLessenValue;
 
-            if (isCrit) CountCritical++;
+            if (isCrit)
+            {
+                CountCritical++; // TODO here checks if crit or not
+                if (value > HighestCrit)
+                    HighestCrit = value;
+            } else
+            {
+                if (value > HighestNonCrit)
+                    HighestNonCrit = value;
+            }
+
+
             if (isLucky) CountLucky++;
             if (!isCrit && !isLucky) CountNormal++;
             CountTotal++;
@@ -205,9 +224,6 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
                 if (value > MaxSingleHit) MaxSingleHit = value;
                 if (value < MinSingleHit) MinSingleHit = value;
             }
-          
-               
-            
 
             if (isLucky && isCauseLucky)
             {
@@ -220,6 +236,17 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
             lock (_realtimeLock)
             {
                 _realtimeWindow.Add((now, value));
+            }
+
+            if (_endTime != null && _endTime != _startTime) // start time = start of combat
+            {
+                double interval = (now - _endTime).Value.TotalSeconds;
+                //Debug.WriteLine(_endTime.ToString() + " " + _startTime.ToString());
+                if (interval > 0.1) // threshold
+                {
+                    Interval = ((now - _endTime).Value.TotalSeconds); // time between instances of damage...
+                    
+                }
             }
 
             _startTime ??= now;
@@ -448,6 +475,11 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
         /// <summary>该技能最后一次命中时间。</summary>
         public DateTime? LastTime { get; init; }
 
+        public double Interval { get; set; } // seconds between hits/activations
+        public ulong HighestNonCrit { get; set;  }
+
+        public ulong HighestCrit { get; set; }
+
         /// <summary>历史总占比（0~1）。UI 显示百分比时 *100 与四舍五入。</summary>
         public double ShareOfTotal { get; init; }
 
@@ -455,6 +487,7 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
         public ulong CritLuckyDamage { get; init; }    // 纯“暴击+幸运”部分
         public ulong CauseLuckyDamage { get; init; }   // 因果幸运的那部分
         public int CountLucky { get; init; }         // 幸运命中次数
+
     }
 
     /// <summary>全队聚合的技能摘要（跨玩家）。</summary>
@@ -802,6 +835,9 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
                     RealtimeMax = s.RealtimeMax,
                     TotalDps = s.GetTotalPerSecond(),
                     LastTime = s.LastRecordTime,     // 如果你没加这个属性，就先删这一行
+                    HighestNonCrit = s.HighestNonCrit,
+                    HighestCrit = s.HighestCrit,
+                    Interval = s.Interval,
                     ShareOfTotal = (double)s.Total / denom,  // 0~1 占比（与 source 对齐）
                     LuckyDamage = s.Lucky + s.CritLucky,   // ★ 合并
                     CritLuckyDamage = s.CritLucky,
@@ -969,6 +1005,7 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
                     RealtimeMax = s.RealtimeMax,     // 实时窗口内的最大承伤
                     TotalDps = s.GetTotalPerSecond(),// 严格说是“平均每秒承伤”
                     LastTime = s.LastRecordTime,     // 如果你没加这个属性，就先删这一行
+                    Interval = s.Interval,
                     ShareOfTotal = (double)s.Total / denom // 0~1 占比（与 source 对齐）
                 });
             }
@@ -1010,7 +1047,8 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
                 RealtimeValue = stat.RealtimeValue,
                 RealtimeMax = stat.RealtimeMax,
                 TotalDps = stat.GetTotalPerSecond(),
-                LastTime = stat.LastRecordTime
+                LastTime = stat.LastRecordTime,
+                Interval = stat.Interval
             };
         }
 
@@ -1655,7 +1693,8 @@ namespace StarResonanceDpsAnalysis.Plugin.DamageStatistics
                 RealtimeValue = stat.RealtimeValue,
                 RealtimeMax = stat.RealtimeMax,
                 TotalDps = stat.GetTotalPerSecond(),
-                LastTime = stat.LastRecordTime
+                LastTime = stat.LastRecordTime,
+                Interval = stat.Interval
             };
         }
 

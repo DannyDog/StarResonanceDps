@@ -1488,4 +1488,13 @@
   <data name="Skill_10040102_Name" xml:space="preserve">
     <value>剑盾哥布林-风刃斩共鸣</value>
   </data>
+  <data name="Skill_1201_Name" xml:space="preserve">
+    <value>""</value>
+  </data>
+  <data name="Skill_7998_Name" xml:space="preserve">
+    <value>幻想冲击虚拟体</value>
+  </data>
+  <data name="Skill_7997_Name" xml:space="preserve">
+    <value>梦幻之箭</value>
+  </data>
 </root>

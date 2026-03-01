@@ -898,6 +898,24 @@ namespace StarResonanceDpsAnalysis.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Advanced Guard.
+        /// </summary>
+        internal static string ModuleName_AdvancedGuard {
+            get {
+                return ResourceManager.GetString("ModuleName_AdvancedGuard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Advanced Support.
+        /// </summary>
+        internal static string ModuleName_AdvancedSupport {
+            get {
+                return ResourceManager.GetString("ModuleName_AdvancedSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 基础攻击.
         /// </summary>
         internal static string ModuleName_BasicAttack {
@@ -907,20 +925,20 @@ namespace StarResonanceDpsAnalysis.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 基础治疗.
+        ///   Looks up a localized string similar to 基础防护.
         /// </summary>
-        internal static string ModuleName_BasicHealing {
+        internal static string ModuleName_BasicGuard {
             get {
-                return ResourceManager.GetString("ModuleName_BasicHealing", resourceCulture);
+                return ResourceManager.GetString("ModuleName_BasicGuard", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 基础防护.
+        ///   Looks up a localized string similar to 基础治疗.
         /// </summary>
-        internal static string ModuleName_BasicProtection {
+        internal static string ModuleName_BasicSupport {
             get {
-                return ResourceManager.GetString("ModuleName_BasicProtection", resourceCulture);
+                return ResourceManager.GetString("ModuleName_BasicSupport", resourceCulture);
             }
         }
         
@@ -934,47 +952,47 @@ namespace StarResonanceDpsAnalysis.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 卓越辅助.
+        ///   Looks up a localized string similar to 高性能攻击.
         /// </summary>
-        internal static string ModuleName_ExcellentHealing {
+        internal static string ModuleName_ExcellentAttackPrem {
             get {
-                return ResourceManager.GetString("ModuleName_ExcellentHealing", resourceCulture);
+                return ResourceManager.GetString("ModuleName_ExcellentAttackPrem", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 卓越守护.
         /// </summary>
-        internal static string ModuleName_ExcellentProtection {
+        internal static string ModuleName_ExcellentGuard {
             get {
-                return ResourceManager.GetString("ModuleName_ExcellentProtection", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 高性能攻击.
-        /// </summary>
-        internal static string ModuleName_HighPerformanceAttack {
-            get {
-                return ResourceManager.GetString("ModuleName_HighPerformanceAttack", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 高性能治疗.
-        /// </summary>
-        internal static string ModuleName_HighPerformanceHealing {
-            get {
-                return ResourceManager.GetString("ModuleName_HighPerformanceHealing", resourceCulture);
+                return ResourceManager.GetString("ModuleName_ExcellentGuard", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 高性能守护.
         /// </summary>
-        internal static string ModuleName_HighPerformanceProtection {
+        internal static string ModuleName_ExcellentGuardPrem {
             get {
-                return ResourceManager.GetString("ModuleName_HighPerformanceProtection", resourceCulture);
+                return ResourceManager.GetString("ModuleName_ExcellentGuardPrem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 卓越辅助.
+        /// </summary>
+        internal static string ModuleName_ExcellentSupport {
+            get {
+                return ResourceManager.GetString("ModuleName_ExcellentSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 高性能治疗.
+        /// </summary>
+        internal static string ModuleName_ExcellentSupportPrem {
+            get {
+                return ResourceManager.GetString("ModuleName_ExcellentSupportPrem", resourceCulture);
             }
         }
         

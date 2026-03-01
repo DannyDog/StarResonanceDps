@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Skill_1201_Name" xml:space="preserve">
-    <value>Raincall Surge</value>
-  </data>
   <data name="Skill_1202_Name" xml:space="preserve">
     <value>Rain Tide - Curving Bullet</value>
   </data>
@@ -1018,10 +1015,10 @@
     <value>Infusion (Double Infusion Extra)</value>
   </data>
   <data name="Skill_155101_Name" xml:space="preserve">
-    <value>Thundercut - Iai</value>
+    <value>Thunder Cut - Iai</value>
   </data>
   <data name="Skill_155102_Name" xml:space="preserve">
-    <value>Thundercut - Final Attack</value>
+    <value>Thunder Cut - Final Attack</value>
   </data>
   <data name="Skill_179906_Name" xml:space="preserve">
     <value>Moon Blade Spin</value>
@@ -1490,5 +1487,14 @@
   </data>
   <data name="Skill_10040102_Name" xml:space="preserve">
     <value>Sword and Shield Goblin - Wind Blade Resonance</value>
+  </data>
+  <data name="Skill_1201_Name" xml:space="preserve">
+    <value>Raincall Surge</value>
+  </data>
+  <data name="Skill_7998_Name" xml:space="preserve">
+    <value>Fantasia Impact</value>
+  </data>
+  <data name="Skill_7997_Name" xml:space="preserve">
+    <value>Phantom Arrow</value>
   </data>
 </root>

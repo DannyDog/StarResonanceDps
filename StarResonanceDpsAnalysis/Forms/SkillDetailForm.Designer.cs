@@ -117,7 +117,7 @@
             table_DpsDetailDataTable.Name = "table_DpsDetailDataTable";
             table_DpsDetailDataTable.RowHeight = 40;
             table_DpsDetailDataTable.RowSelectedBg = Color.FromArgb(174, 212, 251);
-            table_DpsDetailDataTable.Size = new Size(932, 765);
+            table_DpsDetailDataTable.Size = new Size(1051, 765);
             table_DpsDetailDataTable.TabIndex = 14;
             table_DpsDetailDataTable.Text = "table1";
             // 
@@ -134,7 +134,7 @@
             pageHeader1.MaximizeBox = false;
             pageHeader1.Mode = AntdUI.TAMode.Dark;
             pageHeader1.Name = "pageHeader1";
-            pageHeader1.Size = new Size(1281, 43);
+            pageHeader1.Size = new Size(1400, 43);
             pageHeader1.TabIndex = 15;
             pageHeader1.Text = "";
             // 
@@ -147,7 +147,7 @@
             TitleText.Location = new Point(0, 0);
             TitleText.Margin = new Padding(2);
             TitleText.Name = "TitleText";
-            TitleText.Size = new Size(1281, 43);
+            TitleText.Size = new Size(1400, 43);
             TitleText.TabIndex = 26;
             TitleText.Text = "Skill Breakdown";
             TitleText.TextAlign = ContentAlignment.MiddleCenter;
@@ -615,7 +615,7 @@
             // timer1
             // 
             timer1.Enabled = true;
-            timer1.Interval = 1000;
+            timer1.Interval = 500;
             timer1.Tick += timer1_Tick;
             // 
             // UidText
@@ -647,7 +647,7 @@
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(segmented1);
-            panel3.Location = new Point(912, 19);
+            panel3.Location = new Point(1031, 19);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
             panel3.Radius = 500;
@@ -673,7 +673,7 @@
             panel5.Radius = 0;
             panel5.Shadow = 6;
             panel5.ShadowAlign = AntdUI.TAlignMini.Bottom;
-            panel5.Size = new Size(1281, 102);
+            panel5.Size = new Size(1400, 102);
             panel5.TabIndex = 29;
             panel5.Text = "panel5";
             // 
@@ -707,7 +707,7 @@
             select1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             select1.DropDownTextAlign = AntdUI.TAlign.Top;
             select1.List = true;
-            select1.Location = new Point(1100, 26);
+            select1.Location = new Point(1219, 26);
             select1.Margin = new Padding(2);
             select1.Name = "select1";
             select1.Placement = AntdUI.TAlignFrom.Top;
@@ -727,7 +727,7 @@
             panel6.Name = "panel6";
             panel6.Shadow = 6;
             panel6.ShadowAlign = AntdUI.TAlignMini.Top;
-            panel6.Size = new Size(1281, 75);
+            panel6.Size = new Size(1400, 75);
             panel6.TabIndex = 30;
             panel6.Text = "panel6";
             // 
@@ -739,7 +739,7 @@
             button2.IconHover = Properties.Resources.cancel_hover;
             button2.IconPosition = AntdUI.TAlignMini.None;
             button2.IconRatio = 1.5F;
-            button2.Location = new Point(700, 10);
+            button2.Location = new Point(760, 10);
             button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(41, 65);
@@ -754,7 +754,7 @@
             button1.IconHover = Properties.Resources.flushed_hover;
             button1.IconPosition = AntdUI.TAlignMini.None;
             button1.IconRatio = 1.5F;
-            button1.Location = new Point(542, 10);
+            button1.Location = new Point(602, 10);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(41, 65);
@@ -779,7 +779,7 @@
             // splitter1.Panel2
             // 
             splitter1.Panel2.Controls.Add(splitter2);
-            splitter1.Size = new Size(1281, 1016);
+            splitter1.Size = new Size(1400, 1016);
             splitter1.SplitterDistance = 343;
             splitter1.SplitterWidth = 6;
             splitter1.TabIndex = 27;
@@ -853,7 +853,7 @@
             splitter2.Panel2.Controls.Add(table_DpsDetailDataTable);
             splitter2.Panel2.Controls.Add(label10);
             splitter2.Panel2MinSize = 0;
-            splitter2.Size = new Size(932, 1016);
+            splitter2.Size = new Size(1051, 1016);
             splitter2.SplitterDistance = 212;
             splitter2.SplitterWidth = 1;
             splitter2.TabIndex = 23;
@@ -867,7 +867,7 @@
             label10.Margin = new Padding(2);
             label10.Name = "label10";
             label10.Prefix = "温馨提示：";
-            label10.Size = new Size(932, 38);
+            label10.Size = new Size(1051, 38);
             label10.TabIndex = 25;
             label10.Text = "快照模式下曲线图 占比图 分布图将失效";
             label10.TextAlign = ContentAlignment.MiddleCenter;
@@ -877,7 +877,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
-            ClientSize = new Size(1281, 1236);
+            ClientSize = new Size(1400, 1236);
             Controls.Add(splitter1);
             Controls.Add(panel5);
             Controls.Add(pageHeader1);

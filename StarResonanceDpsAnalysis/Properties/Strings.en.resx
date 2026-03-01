@@ -273,29 +273,29 @@
   <data name="ModuleName_BasicAttack" xml:space="preserve">
     <value>Basic Attack</value>
   </data>
-  <data name="ModuleName_HighPerformanceAttack" xml:space="preserve">
+  <data name="ModuleName_ExcellentAttackPrem" xml:space="preserve">
     <value>Excellent Attack Premium</value>
   </data>
   <data name="ModuleName_ExcellentAttack" xml:space="preserve">
     <value>Excellent Attack</value>
   </data>
-  <data name="ModuleName_BasicHealing" xml:space="preserve">
-    <value>Basic Healing</value>
+  <data name="ModuleName_BasicSupport" xml:space="preserve">
+    <value>Basic Support</value>
   </data>
-  <data name="ModuleName_HighPerformanceHealing" xml:space="preserve">
+  <data name="ModuleName_ExcellentSupportPrem" xml:space="preserve">
     <value>Excellent Support Premium</value>
   </data>
-  <data name="ModuleName_ExcellentHealing" xml:space="preserve">
+  <data name="ModuleName_ExcellentSupport" xml:space="preserve">
     <value>Excellent Support</value>
   </data>
-  <data name="ModuleName_BasicProtection" xml:space="preserve">
-    <value>Basic Protection</value>
+  <data name="ModuleName_BasicGuard" xml:space="preserve">
+    <value>Basic Guard</value>
   </data>
-  <data name="ModuleName_HighPerformanceProtection" xml:space="preserve">
-    <value>Excellent Guardian Premium</value>
+  <data name="ModuleName_ExcellentGuardPrem" xml:space="preserve">
+    <value>Excellent Guard Premium</value>
   </data>
-  <data name="ModuleName_ExcellentProtection" xml:space="preserve">
-    <value>Excellent Guardian</value>
+  <data name="ModuleName_ExcellentGuard" xml:space="preserve">
+    <value>Excellent Guard</value>
   </data>
   <data name="ModuleAttr_StrengthBoost" xml:space="preserve">
     <value>Strength Boost</value>
@@ -776,5 +776,11 @@
   </data>
   <data name="ModuleName_AdvancedAttack" xml:space="preserve">
     <value>Advanced Attack</value>
+  </data>
+  <data name="ModuleName_AdvancedSupport" xml:space="preserve">
+    <value>Advanced Support</value>
+  </data>
+  <data name="ModuleName_AdvancedGuard" xml:space="preserve">
+    <value>Advanced Guard</value>
   </data>
 </root>

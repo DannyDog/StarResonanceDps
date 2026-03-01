@@ -223,6 +223,15 @@ namespace StarResonanceDpsAnalysis.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &quot;&quot;.
+        /// </summary>
+        internal static string Skill_1201_Name {
+            get {
+                return ResourceManager.GetString("Skill_1201_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 雨打潮生-转弯子弹.
         /// </summary>
         internal static string Skill_1202_Name {
@@ -4170,6 +4179,24 @@ namespace StarResonanceDpsAnalysis.Properties {
         internal static string Skill_701002_Name {
             get {
                 return ResourceManager.GetString("Skill_701002_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 梦幻之箭.
+        /// </summary>
+        internal static string Skill_7997_Name {
+            get {
+                return ResourceManager.GetString("Skill_7997_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 幻想冲击虚拟体.
+        /// </summary>
+        internal static string Skill_7998_Name {
+            get {
+                return ResourceManager.GetString("Skill_7998_Name", resourceCulture);
             }
         }
     }

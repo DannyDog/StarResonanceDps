@@ -622,6 +622,7 @@ namespace StarResonanceDpsAnalysis.Control
 
             table_DpsDetailDataTable.Columns = new AntdUI.ColumnCollection
             {
+                new AntdUI.Column("ID", "ID"), //Skill ID
                 new AntdUI.Column("Name", Properties.Strings.SkillDetail_SkillName), //技能名
                 new AntdUI.Column("Damage",Properties.Strings.SkillDetail_SkillDamage), //伤害
                 new AntdUI.Column("TotalDps",Properties.Strings.SkillDetail_TotalDps), // DPS/秒
@@ -629,6 +630,9 @@ namespace StarResonanceDpsAnalysis.Control
                 new AntdUI.Column("CritRate",Properties.Strings.SkillDetail_CritRate), // 暴击率
                 new AntdUI.Column("AvgPerHit", Properties.Strings.SkillDetail_AvgPerHit), //平均伤害
                 new AntdUI.Column("Percentage",Properties.Strings.SkillDetail_Percentage), //百分比
+                new AntdUI.Column("HighestNonCrit", "HighestNonCrit"),
+                new AntdUI.Column("HighestCrit", "HighestCrit"),
+                new AntdUI.Column("Interval", "Interval")
             };
         }
 

@@ -428,6 +428,7 @@ namespace StarResonanceDpsAnalysis.Plugin
     {
         #region 字段（私有存储）
         private ulong skillId;    // 技能ID
+        private string id;
         private string name;       // 技能名称
         private string icon;       // 技能图标（文件路径或URL）
         private CellText damage;      // 技能总伤害
@@ -437,14 +438,18 @@ namespace StarResonanceDpsAnalysis.Plugin
         private CellProgress share; // 占比（0~1）
         private CellText totalDps;//秒伤
         private CellText percentage; //百分比
+        private CellText highestnoncrit;
+        private CellText highestcrit;
+        private CellText interval; //time between last hit/activation
 
 
         #endregion
 
         #region 构造函数
-        public SkillData(ulong skillId, string name, string icon, ulong damage, int hitCount, string critRate, double share, double avgPerHit, double totalDps)
+        public SkillData(ulong skillId, string name, string icon, ulong damage, int hitCount, string critRate, double share, double avgPerHit, double totalDps, double highestnoncrit, double highestcrit, double interval)
         {
             SkillId = skillId;
+            ID = skillId.ToString();
             Name = name;
             Icon = icon;
             Damage = new CellText(damage.ToString()) { Font = AppConfig.DigitalFont };
@@ -456,12 +461,49 @@ namespace StarResonanceDpsAnalysis.Plugin
             TotalDps = new CellText(totalDps.ToString()) { Font = AppConfig.DigitalFont };
             Percentage = new CellText(share.ToString()) { Font = AppConfig.DigitalFont };
 
+            HighestNonCrit = new CellText(highestnoncrit.ToString()) { Font = AppConfig.DigitalFont };
+            HighestCrit = new CellText(highestcrit.ToString()) { Font = AppConfig.DigitalFont };
+
+            Interval = new CellText(interval.ToString("F2")) { Font = AppConfig.DigitalFont };
         }
         #endregion
 
         #region 属性封装（包含通知）
 
         // —— 技能基础信息 —— 
+
+        public CellText HighestNonCrit
+        {
+            get => highestnoncrit;
+            set
+            {
+                if (highestnoncrit == value) return;
+                highestnoncrit = value;
+                OnPropertyChanged(nameof(HighestNonCrit));
+            }
+        }
+
+        public CellText HighestCrit
+        {
+            get => highestcrit;
+            set
+            {
+                if (highestcrit == value) return;
+                highestcrit = value;
+                OnPropertyChanged(nameof(HighestCrit));
+            }
+        }
+
+        public CellText Interval
+        {
+            get => interval;
+            set
+            {
+                if (interval == value) return;
+                interval = value;
+                OnPropertyChanged(nameof(Interval));
+            }
+        }
 
         public ulong SkillId
         {
@@ -473,6 +515,18 @@ namespace StarResonanceDpsAnalysis.Plugin
                 OnPropertyChanged(nameof(SkillId));
             }
         }
+
+        public string ID
+        {
+            get => id;
+            set
+            {
+                if (id == value) return;
+                id = value;
+                OnPropertyChanged(nameof(ID));
+            }
+        }
+
 
         /// <summary>
         /// 技能名称（用于UI显示）

@@ -1,10 +1,12 @@
 ﻿using AntdUI;
 using StarResonanceDpsAnalysis.Core;
+using StarResonanceDpsAnalysis.Extends;
 using StarResonanceDpsAnalysis.Forms;
 using StarResonanceDpsAnalysis.Plugin;
 using StarResonanceDpsAnalysis.Plugin.DamageStatistics;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using static StarResonanceDpsAnalysis.Forms.DpsStatisticsForm;
 
@@ -29,6 +31,7 @@ namespace StarResonanceDpsAnalysis.Control
 
             table_DpsDetailDataTable.Columns = new AntdUI.ColumnCollection
             {
+                new AntdUI.Column("ID", "ID"), //Skill ID
                 new AntdUI.Column("Name", Properties.Strings.SkillDetail_SkillName), //技能名
                 new AntdUI.Column("Damage",Properties.Strings.SkillDetail_SkillDamage), //伤害
                 new AntdUI.Column("TotalDps",Properties.Strings.SkillDetail_TotalDps), // DPS/秒
@@ -36,6 +39,10 @@ namespace StarResonanceDpsAnalysis.Control
                 new AntdUI.Column("CritRate",Properties.Strings.SkillDetail_CritRate), // 暴击率
                 new AntdUI.Column("AvgPerHit", Properties.Strings.SkillDetail_AvgPerHit), //平均伤害
                 new AntdUI.Column("Percentage",Properties.Strings.SkillDetail_Percentage), //百分比
+                new AntdUI.Column("HighestNonCrit", "HighestNonCrit"),
+                new AntdUI.Column("HighestCrit", "HighestCrit"),
+                new AntdUI.Column("Interval", "Interval")
+               
             };
 
             // 绑定数据源：SkillTableDatas.SkillTable（外部维护的数据集合）
@@ -104,7 +111,7 @@ namespace StarResonanceDpsAnalysis.Control
         /// </summary>
         public void UpdateSkillTable(ulong uid, SourceType source, MetricType metric)
         {
-            SkillTableDatas.SkillTable.Clear();
+            // SkillTableDatas.SkillTable.Clear();
 
             // 取技能清单（统一成同样的结构）
             List<SkillSummary> skills;
@@ -122,7 +129,7 @@ namespace StarResonanceDpsAnalysis.Control
                         ? StarResonanceDpsAnalysis.Core.SkillType.Heal
                         : StarResonanceDpsAnalysis.Core.SkillType.Damage;
 
-                    var temp = StatisticData._manager.GetPlayerSkillSummaries(uid, null, true, skillType); // TODO Here translate skills
+                    var temp = StatisticData._manager.GetPlayerSkillSummaries(uid, null, true, skillType); // TODO Here translate skills | completed
                     skills = ToListOrEmpty(temp);
                     SortSkillsDesc(skills);
                 }
@@ -161,6 +168,7 @@ namespace StarResonanceDpsAnalysis.Control
 
                 // 查找是否已有相同行
                 var existing = FindRowBySkillId(item.SkillId);
+
                 if (existing == null)
                 {
                     var newRow = new SkillData(
@@ -173,7 +181,10 @@ namespace StarResonanceDpsAnalysis.Control
                         critRateStr,
                         share,
                         item.AvgPerHit,
-                        item.TotalDps
+                        item.TotalDps,
+                        item.HighestNonCrit,
+                        item.HighestCrit,
+                        item.Interval
                     );
 
                     newRow.Share = new CellProgress((float)share);
@@ -193,6 +204,9 @@ namespace StarResonanceDpsAnalysis.Control
                     existing.AvgPerHit = new CellText(item.AvgPerHit.ToString()) { Font = AppConfig.ContentFont };
                     existing.TotalDps = new CellText(item.TotalDps.ToString()) { Font = AppConfig.ContentFont };
                     existing.Percentage = new CellText(share.ToString()) { Font = AppConfig.ContentFont };
+                    existing.HighestNonCrit = new CellText(item.HighestNonCrit.ToString()) { Font = AppConfig.DigitalFont };
+                    existing.HighestCrit = new CellText(item.HighestCrit.ToString()) { Font = AppConfig.DigitalFont };
+                    existing.Interval = new CellText(item.Interval.ToString("F2")) { Font = AppConfig.DigitalFont };
 
                     var cp = new CellProgress((float)share);
                     cp.Fill = AppConfig.DpsColor;
@@ -800,7 +814,10 @@ namespace StarResonanceDpsAnalysis.Control
                     s.CritRate.ToString() + "%",
                     share,
                     s.AvgPerHit,
-                    s.TotalDps
+                    s.TotalDps,
+                    s.HighestNonCrit,
+                    s.HighestCrit,
+                    s.Interval
                 );
 
                 var cp = new CellProgress((float)share);

@@ -124,6 +124,7 @@ namespace StarResonanceDpsAnalysis.Core
             ["1735"] = new SkillDefinition { NameKey = "Skill_1735_Name", DescriptionKey = "Skill_1735_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
             ["1736"] = new SkillDefinition { NameKey = "Skill_1736_Name", DescriptionKey = "Skill_1736_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
             ["155101"] = new SkillDefinition { NameKey = "Skill_155101_Name", DescriptionKey = "Skill_155101_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
+            ["155102"] = new SkillDefinition { NameKey = "Skill_155102_Name", DescriptionKey = "Skill_155102_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
             ["1715"] = new SkillDefinition { NameKey = "Skill_1715_Name", DescriptionKey = "Skill_1715_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
             ["1719"] = new SkillDefinition { NameKey = "Skill_1719_Name", DescriptionKey = "Skill_1719_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
             ["1724"] = new SkillDefinition { NameKey = "Skill_1724_Name", DescriptionKey = "Skill_1724_Desc", Type = SkillType.Damage, Element = ElementType.Thunder },
@@ -349,7 +350,10 @@ namespace StarResonanceDpsAnalysis.Core
             ["2237"] = new SkillDefinition { NameKey = "Skill_2237_Name", DescriptionKey = "Skill_2237_Desc", Type = SkillType.Damage, Element = ElementType.Wind },
             ["2238"] = new SkillDefinition { NameKey = "Skill_2238_Name", DescriptionKey = "Skill_2238_Desc", Type = SkillType.Damage, Element = ElementType.Fire },
             ["1256"] = new SkillDefinition { NameKey = "Skill_1256_Name", DescriptionKey = "Skill_1256_Desc", Type = SkillType.Damage, Element = ElementType.Wind },
-            
+
+            ["7997"] = new SkillDefinition { NameKey = "Skill_7997_Name", DescriptionKey = "Skill_7997_Desc", Type = SkillType.Damage, Element = ElementType.Unknown },
+            ["7998"] = new SkillDefinition { NameKey = "Skill_7998_Name", DescriptionKey = "Skill_7998_Desc", Type = SkillType.Damage, Element = ElementType.Unknown },
+
             // The following are placeholders
 
             ["1201"] = new SkillDefinition { NameKey = "Skill_1201_Name", DescriptionKey = "Skill_1201_Desc", Type = SkillType.Unknown, Element = ElementType.Unknown },
@@ -531,7 +535,7 @@ namespace StarResonanceDpsAnalysis.Core
             ["3210092"] = new SkillDefinition { NameKey = "Skill_3210092_Name", DescriptionKey = "Skill_3210092_Desc", Type = SkillType.Unknown, Element = ElementType.Unknown },
             ["3210101"] = new SkillDefinition { NameKey = "Skill_3210101_Name", DescriptionKey = "Skill_3210101_Desc", Type = SkillType.Unknown, Element = ElementType.Unknown },
             ["3936001"] = new SkillDefinition { NameKey = "Skill_3936001_Name", DescriptionKey = "Skill_3936001_Desc", Type = SkillType.Unknown, Element = ElementType.Unknown },
-            ["10040102"] = new SkillDefinition { NameKey = "Skill_10040102_Name", DescriptionKey = "Skill_10040102_Desc", Type = SkillType.Unknown, Element = ElementType.Unknown },
+            ["10040102"] = new SkillDefinition { NameKey = "Skill_10040102_Name", DescriptionKey = "Skill_10040102_Desc", Type = SkillType.Damage, Element = ElementType.Unknown },
         };
 
         // 与 skill_config.json 的 skills 完全一致（覆盖之前的列表）

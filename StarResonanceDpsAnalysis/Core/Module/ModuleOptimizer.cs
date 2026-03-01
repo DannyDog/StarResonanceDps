@@ -69,7 +69,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
         // ModuleOptimizer.cs 顶部字段区
         private readonly HashSet<string> _priorityAttrs;
         // ====== 配置/依赖（通过构造函数注入） ======
-        public enum ModuleCategory { ATTACK, DEFENSE, SUPPORT, ALL }
+        public enum ModuleCategory { ATTACK, GUARD, SUPPORT, ALL }
 
         public interface IModulePart
         {
@@ -358,22 +358,39 @@ namespace StarResonanceDpsAnalysis.Core.Module
                     if (!attrModules.TryGetValue(part.Name, out var list))
                     {
                         list = new List<(IModuleInfo, int)>();
-                        attrModules[part.Name] = list;
+                        attrModules[part.Name] = list; // creates list of all attributes you own
                     }
                     list.Add((module, part.Value));
                 }
             }
 
-            var candidate = new HashSet<IModuleInfo>();
+            var candidate = new List<IModuleInfo>();
+            int count = 0;
             foreach (var kv in attrModules)
             {
                 var top = kv.Value
-                    .OrderByDescending(x => x.v)
-                    .Take(30)
-                    .Select(x => x.m);
-                foreach (var m in top) candidate.Add(m);
+                    .OrderByDescending(x => x.v) // v = level of iteration's attribute ie; first entry special atk's level is 8
+                    .Take(30) // takes 30 top of specific attributes based on order of their level ie; special atk 10 -> special atk 7 is last element. increase to allow more modules?
+                    .Select(x => x.m); //bug, doesnt seem to be adding all 50?
+
+                count += top.Count();
+
+                foreach (var m in top) {
+                    candidate.Add(m);
+                    /*
+                    if (!candidate.Add(m))
+                    {
+                        foreach(var p in m.Parts) // same parts but the quality is different...this is a problem.
+                        {
+                            Debug.WriteLine(p.Id + ":" + p.Name + ":" + p.Value);
+                        }
+                        Debug.WriteLine("========");
+                    }
+                    */
+                    // add list of selected attributes filtered to be only 50 of the top most, add to candidate. duplicates arent added
+                }
             }
-            return candidate.ToList();
+            return candidate;
         }
 
         // ====== 战斗力计算（阈值战力 + 总属性战力） ======
@@ -454,14 +471,14 @@ namespace StarResonanceDpsAnalysis.Core.Module
         {
             if (modules.Count < 1) return null;
 
-            var current = new List<IModuleInfo> { modules[_rand.Next(modules.Count)] };
+            var current = new List<IModuleInfo> { modules[_rand.Next(modules.Count)] }; //randomly gets a combination of modules to create a module solution from.
 
-            for (int k = 0; k < 3; k++)
+            for (int k = 0; k < 3; k++) // can only make a solution with 4 modules
             {
                 IModuleInfo pick = null;
                 double bestScore = double.NegativeInfinity;
 
-                foreach (var m in modules)
+                foreach (var m in modules) // checks all candidate modules that give best score, calcuating priority aware score
                 {
                     if (current.Contains(m)) continue;
 
@@ -505,7 +522,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
                 for (int i = 0; i < best.Modules.Count; i++)
                 {
                     int take = Math.Min(20, allModules.Count);
-                    var sample = allModules.OrderBy(_ => _rand.Next()).Take(take);
+                    var sample = allModules.OrderBy(_ => _rand.Next()).Take(take); //its random lol
 
                     foreach (var nm in sample)
                     {
@@ -550,22 +567,26 @@ namespace StarResonanceDpsAnalysis.Core.Module
             if (filtered.Count < 1) return new List<ModuleSolution>();
 
             // 预筛选
-            var candidates = PrefilterModules(filtered);
+
+            var candidates = PrefilterModules(filtered); // pulls top 30 of sorted list of modules by their combined attribute level
+            // test with ALL attributes no 30 limit - no change
 
             var solutions = new List<ModuleSolution>();
             var seen = new HashSet<string>(); // 用模块uuid组合去重
 
             int attempts = 0;
-            int maxAttempts = MaxSolutions * 20;
+            int maxAttempts = MaxSolutions * 1;
 
             while (solutions.Count < MaxSolutions && attempts < maxAttempts)
             {
                 attempts++;
 
-                var init = GreedyConstructSolution(candidates);
+                var init = GreedyConstructSolution(candidates); // this? whats this
+                // TODO come back here eventually?
+
                 if (init == null) continue;
 
-                var improved = LocalSearchImprove(init, candidates);
+                var improved = LocalSearchImprove(init, candidates); // or this?
 
                 var ids = string.Join("|", improved.Modules.Select(m => m.Uuid).OrderBy(s => s));
                 if (seen.Add(ids))
@@ -576,6 +597,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
             // ModuleOptimizer.OptimizeModules 末尾
             // OptimizeModules(...) 返回前
             // 末尾排序处：改成根据 sortMode 排序
+
             List<ModuleSolution> ordered;
             if (sortMode == SortMode.ByTotalAttr)
             {
@@ -588,17 +610,24 @@ namespace StarResonanceDpsAnalysis.Core.Module
             }
             else // SortMode.ByScore
             {
-                // “按综合评分排序（战力）”：先战力 → 再勾选属性最高等级 → 再总属性值
                 ordered = solutions
-                    .OrderByDescending(s => s.Score)
-                    .ThenByDescending(s => s.PriorityLevel)
-                    .ThenByDescending(s => s.TotalAttrValue)
-                    .ToList();
-            }
+                .OrderByDescending(s => s.Score)
+                .ThenByDescending(s => s.PriorityLevel)
+                .ThenByDescending(s => s.TotalAttrValue)
+                .ToList();
 
+                //Debug.WriteLine("");
+                // “按综合评分排序（战力）”：先战力 → 再勾选属性最高等级 → 再总属性值
+                //Debug.WriteLine(solutions[0].Score); // every calculate solutions might have different modules
+                // ordered = solutions.OrderByDescending(s => s.Score).ToList(); // debug, from here ordered list changes whats inside
+                //Debug.WriteLine(ordered[0].Score);
+                //ordered = solutions.OrderByDescending(s => s.PriorityLevel).ToList();
+                //Debug.WriteLine(ordered[0].Score);
+                //ordered = solutions.OrderByDescending(s => s.TotalAttrValue).ToList();
+            }
             return ordered.Take(topN).ToList();
 
-
+            //TODO why is it non deterministic? greedyconstruct and localsearch need to investigate.
 
         }
 
@@ -607,28 +636,28 @@ namespace StarResonanceDpsAnalysis.Core.Module
         {
             if (solution == null) return;
 
-            Console.WriteLine($"\n=== 第{rank}名搭配 ===");
-            LogResult($"\n=== 第{rank}名搭配 ===");
+            Console.WriteLine($"\n=== No.{rank}Name collocation ===");
+            LogResult($"\n=== No.{rank}Name collocation ===");
 
             int totalValue = solution.AttrBreakdown.Values.Sum();
-            Console.WriteLine($"总属性值: {totalValue}");
-            LogResult($"总属性值: {totalValue}");
+            Console.WriteLine($"Total Value: {totalValue}");
+            LogResult($"Total Value: {totalValue}");
 
-            Console.WriteLine($"战斗力: {solution.Score:F2}");
-            LogResult($"战斗力: {solution.Score:F2}");
+            Console.WriteLine($"Solution Score: {solution.Score:F2}");
+            LogResult($"Solution Score: {solution.Score:F2}");
 
-            Console.WriteLine("\n模组列表:");
-            LogResult("\n模组列表:");
+            Console.WriteLine("\nModule List:");
+            LogResult("\nModule List:");
             for (int i = 0; i < solution.Modules.Count; i++)
             {
                 var m = solution.Modules[i];
                 var partsStr = string.Join(", ", m.Parts.Select(p => $"{p.Name}+{p.Value}"));
-                Console.WriteLine($"  {i + 1}. {m.Name} (品质{m.Quality}) - {partsStr}");
-                LogResult($"  {i + 1}. {m.Name} (品质{m.Quality}) - {partsStr}");
+                Console.WriteLine($"  {i + 1}. {m.Name} (Quality{m.Quality}) - {partsStr}");
+                LogResult($"  {i + 1}. {m.Name} (Quality{m.Quality}) - {partsStr}");
             }
 
-            Console.WriteLine("\n属性分布:");
-            LogResult("\n属性分布:");
+            Console.WriteLine("\nAttribute Distro:");
+            LogResult("\nAttribute Distro:");
             foreach (var kv in solution.AttrBreakdown.OrderBy(k => k.Key))
             {
                 Console.WriteLine($"  {kv.Key}: +{kv.Value}");
@@ -644,23 +673,23 @@ namespace StarResonanceDpsAnalysis.Core.Module
             Console.WriteLine(new string('=', 50));
             LogResult(new string('=', 50));
 
-            Console.WriteLine($"模组搭配优化 - {category}");
-            LogResult($"模组搭配优化 - {category}");
+            Console.WriteLine($"Module combination optimization - {category}");
+            LogResult($"Module combination optimization - {category}");
 
             Console.WriteLine(new string('=', 50));
             LogResult(new string('=', 50));
 
-            var optimal = OptimizeModules(modules, category, topN);
+            var optimal = OptimizeModules(modules, category, topN, SortMode.ByScore);
 
             if (optimal.Count == 0)
             {
-                Console.WriteLine($"未找到{category}类型的有效搭配");
-                LogResult($"未找到{category}类型的有效搭配");
+                Console.WriteLine($"Not Found{category}Effective combination of types");
+                LogResult($"Not Found{category}Effective combination of types");
                 return;
             }
 
-            Console.WriteLine($"\n找到{optimal.Count}个最优搭配:");
-            LogResult($"\n找到{optimal.Count}个最优搭配:");
+            Console.WriteLine($"\nFound{optimal.Count}Optimal Match:");
+            LogResult($"\nFound{optimal.Count}Optimal Match:");
 
             for (int i = 0; i < optimal.Count; i++)
                 PrintSolutionDetails(optimal[i], i + 1);
@@ -668,18 +697,18 @@ namespace StarResonanceDpsAnalysis.Core.Module
             Console.WriteLine($"\n{new string('=', 50)}");
             LogResult($"\n{new string('=', 50)}");
 
-            Console.WriteLine("统计信息:");
-            LogResult("统计信息:");
+            Console.WriteLine("Statistics:");
+            LogResult("Statistics:");
 
-            Console.WriteLine($"总模组数量: {modules.Count}");
-            LogResult($"总模组数量: {modules.Count}");
+            Console.WriteLine($"Total number of modules: {modules.Count}");
+            LogResult($"Total number of modules: {modules.Count}");
 
             int typeCount = modules.Count(m => GetModuleCategory(m) == category);
-            Console.WriteLine($"{category} 类型模组: {typeCount}");
-            LogResult($"{category} 类型模组: {typeCount}");
+            Console.WriteLine($"{category} Type module: {typeCount}");
+            LogResult($"{category} Type module: {typeCount}");
 
-            Console.WriteLine($"最高战斗力: {optimal[0].Score:F2}");
-            LogResult($"最高战斗力: {optimal[0].Score:F2}");
+            Console.WriteLine($"highest combat effectiveness: {optimal[0].Score:F2}");
+            LogResult($"highest combat effectiveness: {optimal[0].Score:F2}");
 
             Console.WriteLine(new string('=', 50));
             LogResult(new string('=', 50));

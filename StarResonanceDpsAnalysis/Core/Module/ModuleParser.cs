@@ -59,7 +59,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
         /// </summary>
         public static void ParseModuleInfo(byte[] payloadBuffer)
         {
-            ModuleResultMemory.Clear();
+            ModuleResultMemory.Clear(); // redundant?
 
             // 解析 protobuf，同 Python: v_data = syncContainerData.VData
             var syncContainerData = BlueprotobufPb2.SyncContainerData.Parser.ParseFrom(payloadBuffer);
@@ -351,7 +351,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
                 : category switch
                 {
                     var attack when attack == Strings.ModuleCategory_Attack => ModuleCategory.ATTACK,
-                    var guardian when guardian == Strings.ModuleCategory_Guardian => ModuleCategory.GUARDIAN,
+                    var guardian when guardian == Strings.ModuleCategory_Guardian => ModuleCategory.GUARD,
                     var support when support == Strings.ModuleCategory_Support => ModuleCategory.SUPPORT,
                     var all when all == Strings.ModuleCategory_All => ModuleCategory.ALL,
                     _ => ModuleCategory.ATTACK
@@ -361,7 +361,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
             ModuleOptimizer.ModuleCategory optCategory = uiCategory switch
             {
                 ModuleCategory.ATTACK => ModuleOptimizer.ModuleCategory.ATTACK,
-                ModuleCategory.GUARDIAN => ModuleOptimizer.ModuleCategory.DEFENSE, // 守护 → DEFENSE（优化器的命名）
+                ModuleCategory.GUARD => ModuleOptimizer.ModuleCategory.GUARD, // 守护 → DEFENSE（优化器的命名）
                 ModuleCategory.SUPPORT => ModuleOptimizer.ModuleCategory.SUPPORT,
                 ModuleCategory.ALL => ModuleOptimizer.ModuleCategory.ALL,
                 _ => ModuleOptimizer.ModuleCategory.ATTACK
@@ -375,7 +375,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
                     kv => kv.Value switch
                     {
                         ModuleCategory.ATTACK => ModuleOptimizer.ModuleCategory.ATTACK,
-                        ModuleCategory.GUARDIAN => ModuleOptimizer.ModuleCategory.DEFENSE,
+                        ModuleCategory.GUARD => ModuleOptimizer.ModuleCategory.GUARD,
                         ModuleCategory.SUPPORT => ModuleOptimizer.ModuleCategory.SUPPORT,
                         ModuleCategory.ALL => ModuleOptimizer.ModuleCategory.ALL,
                         _ => ModuleOptimizer.ModuleCategory.ATTACK
@@ -396,7 +396,7 @@ namespace StarResonanceDpsAnalysis.Core.Module
                   specialAttrIds: ModuleMaps.SPECIAL_ATTR_IDS,
                   attrNameTypeMap: ModuleMaps.ATTR_NAME_TYPE_MAP,
                   priorityAttrNames: BuildEliteCandidatePool.Attributes,   // ← 新增
-                  resultLogFile: null
+                  resultLogFile: "" //AppContext.BaseDirectory
               );
 
             optimizer.SetDesiredLevels(BuildEliteCandidatePool.DesiredLevels);
@@ -405,6 +405,8 @@ namespace StarResonanceDpsAnalysis.Core.Module
             // 原来：var solutions = optimizer.OptimizeModules(adaptedList, optCategory, 40);
             var solutions = optimizer.OptimizeModules(adaptedList, optCategory, 40, BuildEliteCandidatePool.SortBy);
             ModuleCardDisplay.ModuleResultMemory.FromSolutions(solutions);
+
+            // optimizer.OptimizeAndDisplay(adaptedList);
 
         }
 
