@@ -111,7 +111,10 @@ namespace StarResonanceDpsAnalysis.Control
         /// </summary>
         public void UpdateSkillTable(ulong uid, SourceType source, MetricType metric)
         {
-            // SkillTableDatas.SkillTable.Clear();
+            scrollX = table_DpsDetailDataTable.ScrollBar.ValueX;
+            scrollY = table_DpsDetailDataTable.ScrollBar.ValueY;
+            SkillTableDatas.SkillTable.Clear();
+            
 
             // 取技能清单（统一成同样的结构）
             List<SkillSummary> skills;
@@ -214,7 +217,14 @@ namespace StarResonanceDpsAnalysis.Control
                     existing.Share = cp;
                 }
             }
+
+            table_DpsDetailDataTable.ScrollBar.ValueX = scrollX;
+            table_DpsDetailDataTable.ScrollBar.ValueY = scrollY;
         }
+
+        private int scrollX = 0;
+        private int scrollY = 0;
+
         #endregion
 
         #region 区块：数据类型切换（入口调度：顶部汇总 + 表格 + 图表）

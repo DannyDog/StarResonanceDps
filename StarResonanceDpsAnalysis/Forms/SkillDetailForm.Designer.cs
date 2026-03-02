@@ -107,6 +107,7 @@
             // 
             table_DpsDetailDataTable.BackgroundImageLayout = ImageLayout.Zoom;
             table_DpsDetailDataTable.Dock = DockStyle.Fill;
+            table_DpsDetailDataTable.EditMode = AntdUI.TEditMode.DoubleClick;
             table_DpsDetailDataTable.EmptyImage = Properties.Resources.cancel_hover;
             table_DpsDetailDataTable.FixedHeader = false;
             table_DpsDetailDataTable.Font = new Font("HarmonyOS Sans SC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -114,6 +115,7 @@
             table_DpsDetailDataTable.Gaps = new Size(8, 8);
             table_DpsDetailDataTable.Location = new Point(0, 0);
             table_DpsDetailDataTable.Margin = new Padding(2);
+            table_DpsDetailDataTable.MultipleRows = true;
             table_DpsDetailDataTable.Name = "table_DpsDetailDataTable";
             table_DpsDetailDataTable.RowHeight = 40;
             table_DpsDetailDataTable.RowSelectedBg = Color.FromArgb(174, 212, 251);
